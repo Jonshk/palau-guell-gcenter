@@ -22,7 +22,8 @@ class ApplicationService extends GetxService {
   late final BleAlertService bleAlert;
   SettingService? settings;
 
-  EventEmitter<bool> onEndVentourCharge = EventEmitter<bool>();
+  EventEmitter<bool> onEndVentourCharge =
+      EventEmitter<bool>();
 
   List<CustomerPlaceContent> filteredContents = [];
   List<String> visitedContents = [];
@@ -34,27 +35,40 @@ class ApplicationService extends GetxService {
 
   ApplicationService();
 
-  bool isContentHidden(CustomerPlaceContent content) =>
+  bool isContentHidden(
+    CustomerPlaceContent content,
+  ) =>
       isContentUuidHidden(content.uuid);
 
   bool isContentUuidHidden(String? uuid) {
     if (uuid == null ||
-        !AppConstants.hiddenContentUuids.contains(uuid)) {
+        !AppConstants.hiddenContentUuids
+            .contains(uuid)) {
       return false;
     }
 
     final now = DateTime.now();
 
-    return !now.isBefore(AppConstants.hiddenContentFrom) &&
-        now.isBefore(AppConstants.hiddenContentTo);
+    return !now.isBefore(
+          AppConstants.hiddenContentFrom,
+        ) &&
+        now.isBefore(
+          AppConstants.hiddenContentTo,
+        );
   }
 
-  List<CustomerPlaceContent> get availableContents =>
-      contents.tourContents
-          .where((content) => !isContentHidden(content))
-          .toList();
+  List<CustomerPlaceContent>
+      get availableContents =>
+          contents.tourContents
+              .where(
+                (content) =>
+                    !isContentHidden(content),
+              )
+              .toList();
 
-  void initialize(VentourApplicationService ventour) {
+  void initialize(
+    VentourApplicationService ventour,
+  ) {
     this.ventour = ventour;
     core = ventour.core;
     alerts = ventour.domain.alerts;
@@ -65,7 +79,8 @@ class ApplicationService extends GetxService {
     languages = ventour.domain.languages;
     downloader = ventour.domain.downloader;
     tracking = ventour.domain.tracking;
-    accessibility = ventour.domain.accessibility;
+    accessibility =
+        ventour.domain.accessibility;
     purchase = ventour.domain.purchase;
     pipes = ventour.domain.getPipes();
     settings = SettingService(ventour);
@@ -75,12 +90,15 @@ class ApplicationService extends GetxService {
     mastersync = MastersyncService();
     bleAlert = BleAlertService();
 
-    textSize = Get.put(TextSizeService(tracking.creator));
-    navigation = Get.put(NavigationService(tracking.creator));
+    textSize =
+        Get.put(TextSizeService(tracking.creator));
+    navigation =
+        Get.put(NavigationService(tracking.creator));
     map = Get.put(AppMapService());
     alertModal = Get.put(AlertModalService());
 
-    if (ventour.applicationType == ApplicationType.loan) {
+    if (ventour.applicationType ==
+        ApplicationType.loan) {
       bleAlert.initialize();
     }
   }
@@ -101,73 +119,101 @@ class ApplicationService extends GetxService {
     await deviceUsage.markIdle();
   }
 
-  Future<void> _setMainLanguageAndNavigate() async {
-    Get.updateLocale(Locale(languages.main.isoCode));
+  Future<void>
+      _setMainLanguageAndNavigate() async {
+    Get.updateLocale(
+      Locale(languages.main.isoCode),
+    );
     languages.setCurrent(languages.main);
 
     if (navigation._endSplashAnimation ||
         Get.currentRoute != AppRoutes.splash) {
       Get.offAllNamed(AppRoutes.languages);
     } else {
-      services.navigation.onEndSplashAnimation.stream.listen((value) {
+      services.navigation
+          .onEndSplashAnimation.stream
+          .listen((value) {
         if (value) {
-          Get.offAllNamed(AppRoutes.languages);
+          Get.offAllNamed(
+            AppRoutes.languages,
+          );
         }
       });
     }
   }
 
   void _checkTrackingToSend() {
+    // Se mantiene el comportamiento original:
+    // el envío automático POR CARGA solo funciona
+    // en release. Así DEBUG no se reinicia por
+    // enchufar el teléfono durante las pruebas.
     if (!kReleaseMode) {
       return;
     }
 
-    if (ventour.applicationType == ApplicationType.loan) {
+    if (ventour.applicationType ==
+        ApplicationType.loan) {
       bool isProcessing = false;
       final battery = Battery();
 
-      battery.onBatteryStateChanged.listen((state) {
-        if (state == BatteryState.charging &&
-            !isProcessing) {
-          isProcessing = true;
+      battery.onBatteryStateChanged.listen(
+        (state) {
+          if (state == BatteryState.charging &&
+              !isProcessing) {
+            isProcessing = true;
 
-          Future.delayed(
-            const Duration(milliseconds: 10),
-          ).then((_) {
-            tracking.prepareAndSend().then((sent) {
-              if (sent) {
-                ToastService.show(
-                  "Atención",
-                  "Estadisticas enviadas!",
-                  Colors.green,
-                );
-
-                Future.delayed(
-                  const Duration(seconds: 2),
-                ).then((_) async {
-                  await TerminateRestart.instance.restartApp(
-                    options: const TerminateRestartOptions(
-                      terminate: true,
-                    ),
+            Future.delayed(
+              const Duration(milliseconds: 10),
+            ).then((_) {
+              tracking
+                  .prepareAndSend()
+                  .then((sent) {
+                if (sent) {
+                  ToastService.show(
+                    "Atención",
+                    "Estadisticas enviadas!",
+                    Colors.green,
                   );
-                });
-              } else {
-                isProcessing = false;
-              }
+
+                  Future.delayed(
+                    const Duration(seconds: 2),
+                  ).then((_) async {
+                    await TerminateRestart
+                        .instance
+                        .restartApp(
+                      options:
+                          const TerminateRestartOptions(
+                        terminate: true,
+                      ),
+                    );
+                  });
+                } else {
+                  isProcessing = false;
+                }
+              });
             });
-          });
-        }
-      });
+          }
+        },
+      );
     } else {
       tracking.listenToSend();
     }
   }
 
-  Future<void> sendTrackingByKeyboard() async {
-    if (!kReleaseMode ||
-        ventour.applicationType !=
-            ApplicationType.loan) {
-      return;
+  /// Cierra la visita y envía las estadísticas.
+  ///
+  /// IMPORTANTE:
+  /// A diferencia del comportamiento anterior, este método
+  /// funciona también en DEBUG para poder probar el circuito
+  /// completo del disparador magnético.
+  ///
+  /// El envío automático por carga continúa limitado a RELEASE
+  /// en _checkTrackingToSend(), evitando reinicios inesperados
+  /// mientras desarrollamos.
+  Future<bool> sendTrackingByKeyboard() async {
+    if (ventour.applicationType !=
+        ApplicationType.loan) {
+      return false;
     }
 
     tracking.creator.endVisit();
@@ -178,18 +224,28 @@ class ApplicationService extends GetxService {
       const Duration(milliseconds: 10),
     );
 
-    final sent = await tracking.prepareAndSend();
+    final sent =
+        await tracking.prepareAndSend();
 
     if (sent) {
+      ToastService.show(
+        "Atención",
+        "Estadisticas enviadas!",
+        Colors.green,
+      );
+
       await Future.delayed(
         const Duration(seconds: 2),
       );
 
       await TerminateRestart.instance.restartApp(
-        options: const TerminateRestartOptions(
+        options:
+            const TerminateRestartOptions(
           terminate: true,
         ),
       );
     }
+
+    return sent;
   }
 }

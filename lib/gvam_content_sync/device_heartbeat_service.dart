@@ -29,6 +29,23 @@ class DeviceHeartbeatService {
     );
   }
 
+  /// Envía el estado inmediatamente a GCenter.
+  ///
+  /// Se permite que coincida con el heartbeat periódico:
+  /// un reporte duplicado es preferible a esperar 15 s
+  /// cuando acabamos de recibir físicamente un equipo.
+  Future<void> sendNow({
+    bool pollCommands = true,
+  }) async {
+    await _reporter.sendReport(
+      phase: 'heartbeat',
+    );
+
+    if (pollCommands) {
+      await _commands.pollOnce();
+    }
+  }
+
   Future<void> _tick() async {
     if (_tickRunning) return;
 

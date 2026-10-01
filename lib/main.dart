@@ -1,11 +1,17 @@
+import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:get/get.dart';
 
 import '/start_error_modal.dart';
 import 'config.dart';
+
 import 'gvam_content_sync/charging_sync_listener.dart';
 import 'gvam_content_sync/device_heartbeat_service.dart';
 import 'gvam_content_sync/gcenter_runtime.dart';
 import 'gvam_content_sync/gcenter_settings_bridge.dart';
+import 'gvam_content_sync/magnetic_return_listener.dart';
 
 final ChargingSyncListener _chargingListener =
     ChargingSyncListener();
@@ -13,21 +19,19 @@ final ChargingSyncListener _chargingListener =
 final DeviceHeartbeatService _deviceHeartbeat =
     DeviceHeartbeatService();
 
+MagneticReturnListener? _magneticReturnListener;
+
 bool _gcenterStarted = false;
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
-  // IMPORTANTE:
-  // GCenter NO arranca aquí porque todavía no conocemos
-  // el UUID real de Ventour.
 
   Get.put(ApplicationService());
 
   await Environment.initialize();
   await AppTranslations.initialize();
 
-  SystemChrome.setPreferredOrientations([
+  await SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
   ]);
 
@@ -36,7 +40,7 @@ Future<void> main() async {
   await _configureAudioExtension();
 
   if (!kIsWeb) {
-    SystemChrome.setEnabledSystemUIMode(
+    await SystemChrome.setEnabledSystemUIMode(
       SystemUiMode.manual,
       overlays: [],
     );
@@ -57,12 +61,9 @@ class MainApp extends StatelessWidget {
 
           return MediaQuery(
             data: mq.copyWith(
-              textScaler:
-                  const TextScaler.linear(1.0),
-              padding:
-                  mq.padding.copyWith(bottom: 0),
-              viewPadding:
-                  mq.viewPadding.copyWith(bottom: 0),
+              textScaler: const TextScaler.linear(1.0),
+              padding: mq.padding.copyWith(bottom: 0),
+              viewPadding: mq.viewPadding.copyWith(bottom: 0),
             ),
             child: child!,
           );
@@ -78,10 +79,8 @@ class MainApp extends StatelessWidget {
         initialRoute: AppRoutes.splash,
         getPages: List.from(AppPages.pages),
         translations: AppTranslations(),
-        fallbackLocale:
-            const Locale('es-ES'),
-        locale:
-            const Locale('es-ES'),
+        fallbackLocale: const Locale('es-ES'),
+        locale: const Locale('es-ES'),
         debugShowCheckedModeBanner: false,
         theme: AppTheme.theme,
         initialBinding:
@@ -103,9 +102,10 @@ class MainApp extends StatelessWidget {
         .then((initialized) async {
       services.initialize(ventour);
 
-      // UUID ÚNICO DE GCENTER:
-      // utilizamos exactamente el UUID que muestra
-      // el menú técnico de Ventour.
+      // ==================================================
+      // GCENTER
+      // ==================================================
+
       GCenterRuntime.configure(
         deviceUuid:
             ventour.core.device.uuid,
@@ -113,24 +113,83 @@ class MainApp extends StatelessWidget {
             ventour.publicationReleaseId,
       );
 
-      // Hace funcionales los 3 botones que aparecen
-      // arriba de SettingsPage:
-      // - Actualizar contenido
-      // - Actualizar APK
-      // - Actualizar todo
       GCenterSettingsBridge.register();
 
-      // Heartbeat y escucha de carga SOLO después
-      // de conocer el UUID real.
+      // ==================================================
+      // DEVOLUCIÓN FÍSICA POR IMÁN
+      // ==================================================
+
+      _magneticReturnListener ??=
+          MagneticReturnListener(
+        onReturnDetected: () async {
+          try {
+            final wasInUse =
+                !(await services
+                    .deviceUsage
+                    .isIdle());
+
+            if (!wasInUse) {
+              debugPrint(
+                'GCenter: imán detectado, '
+                'pero el dispositivo ya estaba LIBRE.',
+              );
+              return;
+            }
+
+            debugPrint(
+              'GCenter: devolución magnética confirmada.',
+            );
+
+            // 1) Cambiar inmediatamente a LIBRE.
+            await services.markDeviceIdle();
+
+            // 2) Informarlo inmediatamente a GCenter.
+            // No pedimos órdenes todavía: primero cerramos
+            // y enviamos la visita.
+            await _deviceHeartbeat.sendNow(
+              pollCommands: false,
+            );
+
+            // 3) Cerrar visita + enviar estadísticas.
+            // En esta versión está permitido también en DEBUG.
+            final sent =
+                await services
+                    .sendTrackingByKeyboard();
+
+            debugPrint(
+              'GCenter: estadísticas finalizadas. '
+              'sent=$sent',
+            );
+          } catch (e, stack) {
+            debugPrint(
+              'GCenter: error procesando '
+              'devolución magnética: $e',
+            );
+            debugPrintStack(
+              stackTrace: stack,
+            );
+          }
+        },
+      );
+
+      // ==================================================
+      // SERVICIOS GCENTER
+      // ==================================================
+
       if (!_gcenterStarted) {
         _gcenterStarted = true;
 
         _deviceHeartbeat.start();
         _chargingListener.start();
+        _magneticReturnListener!.start();
 
         await _chargingListener
             .checkImmediatelyIfCharging();
       }
+
+      // ==================================================
+      // VENTOUR
+      // ==================================================
 
       if (initialized) {
         await services.setupAppFlow();

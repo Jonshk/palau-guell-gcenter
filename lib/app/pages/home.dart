@@ -39,9 +39,12 @@ class HomePage extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 116),
+              padding: const EdgeInsets.symmetric(
+                vertical: 116,
+              ),
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment:
+                    MainAxisAlignment.spaceBetween,
                 children: [
                   SvgPicture.asset(
                     "assets/svg/logo.svg",
@@ -64,7 +67,8 @@ class HomePage extends StatelessWidget {
                       size: 32,
                       color: AppTheme.light,
                     ),
-                    iconAlignment: IconAlignment.end,
+                    iconAlignment:
+                        IconAlignment.end,
                   ),
                 ],
               ),
@@ -75,10 +79,14 @@ class HomePage extends StatelessWidget {
                 child: SafeArea(
                   child: IconButton(
                     onPressed: () =>
-                        services.settings!.openSettings(context),
+                        services.settings!
+                            .openSettings(
+                      context,
+                    ),
                     icon: const SizedBox(),
                     color: Colors.transparent,
-                    highlightColor: Colors.transparent,
+                    highlightColor:
+                        Colors.transparent,
                     enableFeedback: false,
                   ),
                 ),
@@ -98,7 +106,8 @@ class HomePage extends StatelessWidget {
 
     if (services.ventour.applicationType ==
         ApplicationType.loan) {
-      services.alertModal.surveySend = false;
+      services.alertModal.surveySend =
+          false;
     }
 
     audio.modal.setNotShowAgain(
@@ -111,11 +120,18 @@ class HomePage extends StatelessWidget {
       false,
     );
 
-    // Desde este punto el móvil está en uso y no debe actualizarse.
-    await services.markDeviceInUse();
+    // ================================================
+    // INICIO REAL DE LA VISITA
+    // ================================================
 
     services.tracking.creator.startVisit();
 
-    Get.toNamed(AppRoutes.tours);
+    // Desde aquí el dispositivo está EN USO.
+    // GCenter recibirá este estado en el heartbeat.
+    await services.markDeviceInUse();
+
+    Get.toNamed(
+      AppRoutes.tours,
+    );
   }
 }
