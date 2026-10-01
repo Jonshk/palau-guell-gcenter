@@ -1,0 +1,135 @@
+{
+    "i18n": {
+        "languages": {
+            "ar-AR": "العربية",
+            "de-DE": "Deutsch",
+            "en-UK": "English",
+            "es-CA": "Català",
+            "es-ES": "Castellano",
+            "es-EU": "Euskara",
+            "es-GL": "Galego",
+            "fr-FR": "Français",
+            "hu-HU": "Magyar",
+            "it-IT": "Italiano",
+            "ja-JA": "日本語",
+            "ko-KR": "한국어",
+            "pt-PT": "Português",
+            "ru-RU": "Pусский",
+            "zh-MAN": "中文",
+            "nds-NL": "Nedersaksisch"
+        },
+        "startVisit": "Comenzar visita",
+        "list": "Listado",
+        "back": "Anterior",
+        "map": "Plano",
+        "keyboard": "Teclado",
+        "next": "Siguiente",
+        "tours": "Visitas",
+        "accept": "Aceptar",
+        "send": "Enviar",
+        "successSend": "Su valoración se ha enviado correctamente",
+        "thanks": "Gracias",
+        "ok": "De acuerdo",
+        "cancel": "Cancelar",
+        "child": "Escucha la melodía",
+        "accessibility": {
+            "title": "Accesibilidad",
+            "description": "A continuación puede, si lo desea, activar las siguientes características de accesibilidad para la aplicación.",
+            "enableSignLanguage": "Lengua de signos",
+            "enableAudioDescription": "Audio-descripción",
+            "enableSubtitles": "Subtítulos"
+        },
+        "headsetModal": {
+            "title": "Preparate para escuchar",
+            "description": "Para evitar molestar a otros usarios, coloque su dispositivo móvil cerca de su oído o conecte unos auriculares.",
+            "notAgain": "No volver a mostrarme este mensaje"
+        },
+        "menu": {
+            "language": "Idiomas",
+            "survey": "Cuestionario",
+            "information": "Información",
+            "location": "Localización"
+        },
+        "crv": {
+            "sincronize": "Audio sincronizado con el video de la sala",
+            "mastersync": "Sincronizando audio"
+        },
+        "error": {
+            "title": "Error de reproducción",
+            "description": "En estos momentos no ha sido posible realizar la sincronización con el video, pruebe pasados unos minutos o consulte a nuestro personal.",
+            "pause": "Error al pausar"
+        },
+        "instructions": {
+            "title": "Esta sala cuenta con un contenido audiovisual",
+            "description": "Pulsa el botón de la pantalla **Sincronizar Audiovisual**.\n\nverás el vídeo en la pantalla de la sala mientras disfrutas del sonido sincronizado directamente en tus auriculares.",
+            "button": "Sincronizar Audiovisual",
+            "description2": "Sincroniza el audiovisual en tu móvil, pulsa sobre el icono del play y acércate el teléfono al oído"
+        },
+        "survey": {
+            "title": "VALORA TU EXPERIENCIA",
+            "description": "Dedica un minuto a completar la encuesta y ayúdanos a mejorar el servicio",
+            "correct": "Encuesta rellenada correctamente. Gracias"
+        },
+        "maps": {
+            "0": "Planta baja",
+            "1": "Entresuelo",
+            "3": "Entreplanta",
+            "5": "Desván",
+            "-1": "Sótano",
+            "2": "Planta noble",
+            "4": "Dormitorios",
+            "6": "Azotea",
+            "presentation": "Presentación",
+            "garage": "Cochera",
+            "basementRamp": "Acceso al sótano y rampa",
+            "lobby": "Vestíbulo",
+            "stairs": "Acceso al entresuelo y escaleras",
+            "homeLobby": "Vestíbulo de la vivienda y escalera",
+            "nobleFloor": "Acceso a planta noble y escaleras",
+            "musicCourt": "Tribunal de los músicos",
+            "bedroomsStairs": "Acceso a la planta de los dormitorios y escalera",
+            "loft": "Desván. Espacio Expositivi",
+            "roof": "Acceso a la azotea y escalera",
+            "stable": "Caballeriza",
+            "groundFloor": "Acceso al vestíbulo de la planta baja y rampa",
+            "anteroom": "Antesala",
+            "trustRoomCourtRoom": "Sala de confianza y sala de tribuna",
+            "diningRoom": "Comedor",
+            "corridor": "Corredor",
+            "noonRoof": "Terraza de medidía y fachada posterior",
+            "paintingWorkshop": "Ala de billar y taller de pintura y escultura",
+            "lostSteps": "Sala de los pasos perdidos",
+            "visitingRoom": "Sala de visitas y tocador de señoras",
+            "centralRoom": "Salón central 1",
+            "centralRoom2": "Salón central 2",
+            "stairsAccess": "Acceso a la entreplanta y escaleras",
+            "trustRoom": "Sala de confianza",
+            "isabelLopez": "Dormitorio de Isabel López",
+            "sonsRoom": "Dormitorio y sala de estudios de los hijos Güell Lopez",
+            "blueRoom": "Antiguo baño, estancias sanitarias y habitación azul. Audiovisual",
+            "eusebisRoom": "Dormitorio de Eusebi Güell",
+            "serviceStair": "Escalera de servicio",
+            "roofTop": "Azotea",
+            "groundRoomExit": "Acceso a la planta baja, salida y escalera"
+        },
+        "keyboards": {
+            "contentOutOfTour": "Este contenido no forma parte del recorrido actual. ¿Quieres salir para verlo?",
+            "contentNotFoundInAnyTour": "El contenido que intenta buscar no existe"
+        },
+        "download": {
+            "title": "Descarga de recorrido",
+            "description": "¿Deseas descargar los contenidos de este recorrido para utilizar la aplicación sin conexión?",
+            "size": "Tamaño de la descarga",
+            "download": "Descargar",
+            "online": "Continuar online",
+            "downloading": "Descargando recorrido",
+            "success": "Descarga completada"
+        },
+        "attentionTitle": "Atención",
+        "contentNotAvailable": "Contenido no disponible",
+        "floor": "Planta",
+        "keyboardSearchText": "",
+        "mapNotAvailable": "Mapa no disponible",
+        "resourceNotFound": "Contenido no encontrado"
+    }
+}

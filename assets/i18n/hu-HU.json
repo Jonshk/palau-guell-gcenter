@@ -1,0 +1,135 @@
+{
+    "i18n": {
+        "languages": {
+            "ar-AR": "العربية",
+            "de-DE": "Deutsch",
+            "en-UK": "English",
+            "es-CA": "Català",
+            "es-ES": "Castellano",
+            "es-EU": "Euskara",
+            "es-GL": "Galego",
+            "fr-FR": "Français",
+            "hu-HU": "Magyar",
+            "it-IT": "Italiano",
+            "ja-JA": "日本語",
+            "ko-KR": "한국어",
+            "pt-PT": "Português",
+            "ru-RU": "Pусский",
+            "zh-MAN": "中文",
+            "nds-NL": "Nedersaksisch"
+        },
+        "startVisit": "Látogatás kezdése",
+        "list": "Lista",
+        "child": "Hallgasd a dallamot",
+        "back": "Előző",
+        "map": "Térkép",
+        "keyboard": "Billentyűzet",
+        "next": "Következő",
+        "tours": "Túrák",
+        "accept": "Elfogad",
+        "send": "Küld",
+        "successSend": "Az értékelését sikeresen elküldtük",
+        "thanks": "Köszönjük",
+        "ok": "Rendben",
+        "cancel": "Mégse",
+        "accessibility": {
+            "title": "Akadálymentesítés",
+            "description": "Kívánsága esetén aktiválhatja az alábbi akadálymentesítési funkciókat az alkalmazáshoz.",
+            "enableSignLanguage": "Jelnyelv",
+            "enableAudioDescription": "Hangos leírás",
+            "enableSubtitles": "Feliratok"
+        },
+        "headsetModal": {
+            "title": "Készülj fel a hallgatásra",
+            "description": "Hogy ne zavarja a többi felhasználót, helyezze mobilkészülékét a füléhez közel, vagy csatlakoztasson fülhallgatót.",
+            "notAgain": "Ne jelenítse meg újra ezt az üzenetet"
+        },
+        "menu": {
+            "language": "Nyelvek",
+            "survey": "Kérdőív",
+            "information": "Információ",
+            "location": "Helyszín"
+        },
+        "crv": {
+            "sincronize": "A terem videójával szinkronizált hang",
+            "mastersync": "Hang szinkronizálása"
+        },
+        "error": {
+            "title": "Lejátszási hiba",
+            "description": "Jelenleg nem sikerült szinkronizálni a videóval, próbálja meg néhány perc múlva, vagy forduljon munkatársainkhoz.",
+            "pause": "Hiba szüneteltetéskor"
+        },
+        "instructions": {
+            "title": "Ez a terem audiovizuális tartalommal rendelkezik",
+            "description": "Nyomja meg a képernyőn lévő gombot **Audiovizuális szinkronizálás**.\n\nA terem képernyőjén láthatja a videót, miközben közvetlenül a fejhallgatón keresztül élvezi a szinkronizált hangot.",
+            "button": "Audiovizuális szinkronizálás",
+            "description2": "Szinkronizálja az audiovizuális tartalmat mobiltelefonján, nyomja meg a lejátszás ikont, és tegye a telefont a füléhez"
+        },
+        "survey": {
+            "title": "ÉRTÉKELD A TAPASZTALATOD",
+            "description": "Szánj egy percet a kérdőív kitöltésére és segíts nekünk javítani a szolgáltatást",
+            "correct": "Kérdőív sikeresen kitöltve. Köszönjük"
+        },
+        "maps": {
+            "0": "Földszint",
+            "1": "Félszint",
+            "3": "Köztes szint",
+            "5": "Padlás",
+            "-1": "Pince",
+            "2": "Főemelet",
+            "4": "Hálószobák",
+            "6": "Tetőterasz",
+            "presentation": "Bemutató",
+            "garage": "Garázs",
+            "basementRamp": "Hozzáférés a pincéhez és rámpa",
+            "lobby": "Előcsarnok",
+            "stairs": "Hozzáférés a félszinthez és lépcsők",
+            "homeLobby": "Lakás előcsarnoka és lépcső",
+            "nobleFloor": "Hozzáférés a főemelethez és lépcsők",
+            "musicCourt": "Zenészek karzata",
+            "bedroomsStairs": "Hozzáférés a hálószobák szintjéhez és lépcső",
+            "loft": "Padlás. Kiállítótér",
+            "roof": "Hozzáférés a tetőteraszhoz és lépcső",
+            "stable": "Istálló",
+            "groundFloor": "Hozzáférés a földszinti előcsarnokhoz és rámpa",
+            "anteroom": "Előszoba",
+            "trustRoomCourtRoom": "Bizalmi szoba és karzat szoba",
+            "diningRoom": "Étkező",
+            "corridor": "Folyosó",
+            "noonRoof": "Déli terasz és hátsó homlokzat",
+            "paintingWorkshop": "Biliárd szárny és festő- és szobrászműhely",
+            "lostSteps": "Elveszett lépések terme",
+            "visitingRoom": "Látogatószoba és női öltöző",
+            "centralRoom": "Központi szalon 1",
+            "centralRoom2": "Központi szalon 2",
+            "stairsAccess": "Hozzáférés a köztes szinthez és lépcsők",
+            "trustRoom": "Bizalmi szoba",
+            "isabelLopez": "Isabel López hálószobája",
+            "sonsRoom": "A Güell López fiúk hálószobája és tanulószobája",
+            "blueRoom": "Régi fürdőszoba, szaniter helyiségek és kék szoba. Audiovizuális",
+            "eusebisRoom": "Eusebi Güell hálószobája",
+            "serviceStair": "Szolgálati lépcső",
+            "roofTop": "Tetőterasz",
+            "groundRoomExit": "Hozzáférés a földszinthez, kijárat és lépcső"
+        },
+        "keyboards": {
+            "contentOutOfTour": "Ez a tartalom nem része a jelenlegi túrának. Ki szeretne lépni, hogy megtekintse?",
+            "contentNotFoundInAnyTour": "A keresett tartalom nem létezik"
+        },
+        "download": {
+            "title": "Túra letöltése",
+            "description": "Szeretné letölteni ennek a túrának a tartalmát az alkalmazás offline használatához?",
+            "size": "Letöltési méret",
+            "download": "Letöltés",
+            "online": "Folytatás online",
+            "downloading": "Túra letöltése",
+            "success": "Letöltés befejezve"
+        },
+        "attentionTitle": "Figyelem",
+        "contentNotAvailable": "Tartalom nem elérhető",
+        "floor": "Emelet",
+        "keyboardSearchText": "",
+        "mapNotAvailable": "Térkép nem elérhető",
+        "resourceNotFound": "Tartalom nem található"
+    }
+}

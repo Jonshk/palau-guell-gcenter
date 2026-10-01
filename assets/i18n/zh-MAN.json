@@ -1,0 +1,135 @@
+{
+    "i18n": {
+        "languages": {
+            "ar-AR": "العربية",
+            "de-DE": "Deutsch",
+            "en-UK": "English",
+            "es-CA": "Català",
+            "es-ES": "Castellano",
+            "es-EU": "Euskara",
+            "es-GL": "Galego",
+            "fr-FR": "Français",
+            "hu-HU": "Magyar",
+            "it-IT": "Italiano",
+            "ja-JA": "日本語",
+            "ko-KR": "한국어",
+            "pt-PT": "Português",
+            "ru-RU": "Pусский",
+            "zh-MAN": "中文",
+            "nds-NL": "Nedersaksisch"
+        },
+        "startVisit": "开始参观",
+        "child": "听旋律",
+        "list": "列表",
+        "back": "返回",
+        "map": "地图",
+        "keyboard": "键盘",
+        "next": "下一个",
+        "tours": "参观",
+        "accept": "接受",
+        "send": "发送",
+        "successSend": "您的评价已成功发送",
+        "thanks": "谢谢",
+        "ok": "好的",
+        "cancel": "取消",
+        "accessibility": {
+            "title": "无障碍功能",
+            "description": "如果您愿意,可以为应用程序激活以下无障碍功能。",
+            "enableSignLanguage": "手语",
+            "enableAudioDescription": "音频描述",
+            "enableSubtitles": "字幕"
+        },
+        "headsetModal": {
+            "title": "准备聆听",
+            "description": "为了避免打扰其他用户,请将移动设备靠近耳朵或连接耳机。",
+            "notAgain": "不再显示此消息"
+        },
+        "menu": {
+            "language": "语言",
+            "survey": "问卷",
+            "information": "信息",
+            "location": "位置"
+        },
+        "crv": {
+            "sincronize": "与房间视频同步的音频",
+            "mastersync": "正在同步音频"
+        },
+        "error": {
+            "title": "播放错误",
+            "description": "目前无法与视频同步,请在几分钟后重试或咨询我们的工作人员。",
+            "pause": "暂停时出错"
+        },
+        "instructions": {
+            "title": "此房间有视听内容",
+            "description": "按屏幕上的按钮 **同步视听内容**。\n\n您将在房间屏幕上看到视频，同时直接通过耳机享受同步音频。",
+            "button": "同步视听内容",
+            "description2": "在手机上同步视听内容,按播放图标并将手机靠近耳朵"
+        },
+        "survey": {
+            "title": "评价您的体验",
+            "description": "花一分钟完成调查问卷,帮助我们改进服务",
+            "correct": "调查问卷已正确填写。谢谢"
+        },
+        "maps": {
+            "0": "一楼",
+            "1": "夹层",
+            "3": "中间层",
+            "5": "阁楼",
+            "-1": "地下室",
+            "2": "主楼层",
+            "4": "卧室",
+            "6": "屋顶露台",
+            "presentation": "展示",
+            "garage": "车库",
+            "basementRamp": "通往地下室和坡道",
+            "lobby": "大厅",
+            "stairs": "通往夹层和楼梯",
+            "homeLobby": "住宅大厅和楼梯",
+            "nobleFloor": "通往主楼层和楼梯",
+            "musicCourt": "音乐家法庭",
+            "bedroomsStairs": "通往卧室楼层和楼梯",
+            "loft": "阁楼。展览空间",
+            "roof": "通往屋顶露台和楼梯",
+            "stable": "马厩",
+            "groundFloor": "通往一楼大厅和坡道",
+            "anteroom": "前厅",
+            "trustRoomCourtRoom": "信任室和看台房间",
+            "diningRoom": "餐厅",
+            "corridor": "走廊",
+            "noonRoof": "午间露台和后立面",
+            "paintingWorkshop": "台球翼和绘画雕塑工作室",
+            "lostSteps": "失落脚步大厅",
+            "visitingRoom": "访客室和女士化妆室",
+            "centralRoom": "中央沙龙1",
+            "centralRoom2": "中央沙龙2",
+            "stairsAccess": "通往中间层和楼梯",
+            "trustRoom": "信任室",
+            "isabelLopez": "伊莎贝尔·洛佩斯的卧室",
+            "sonsRoom": "古埃尔·洛佩斯儿子们的卧室和书房",
+            "blueRoom": "旧浴室、卫生设施和蓝色房间。视听",
+            "eusebisRoom": "尤塞比·古埃尔的卧室",
+            "serviceStair": "服务楼梯",
+            "roofTop": "屋顶露台",
+            "groundRoomExit": "通往一楼、出口和楼梯"
+        },
+        "keyboards": {
+            "contentOutOfTour": "此内容不属于当前游览路线。您想退出查看吗?",
+            "contentNotFoundInAnyTour": "您尝试搜索的内容不存在"
+        },
+        "download": {
+            "title": "下载游览路线",
+            "description": "您想下载此游览路线的内容以便离线使用应用程序吗?",
+            "size": "下载大小",
+            "download": "下载",
+            "online": "继续在线",
+            "downloading": "正在下载游览路线",
+            "success": "下载完成"
+        },
+        "attentionTitle": "注意",
+        "contentNotAvailable": "内容不可用",
+        "floor": "楼层",
+        "keyboardSearchText": "",
+        "mapNotAvailable": "地图不可用",
+        "resourceNotFound": "未找到内容"
+    }
+}

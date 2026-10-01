@@ -1,0 +1,135 @@
+{
+    "i18n": {
+        "languages": {
+            "ar-AR": "العربية",
+            "de-DE": "Deutsch",
+            "en-UK": "English",
+            "es-CA": "Català",
+            "es-ES": "Castellano",
+            "es-EU": "Euskara",
+            "es-GL": "Galego",
+            "fr-FR": "Français",
+            "hu-HU": "Magyar",
+            "it-IT": "Italiano",
+            "ja-JA": "日本語",
+            "ko-KR": "한국어",
+            "pt-PT": "Português",
+            "ru-RU": "Pусский",
+            "zh-MAN": "中文",
+            "nds-NL": "Nedersaksisch"
+        },
+        "startVisit": "Bezeuk beginnen",
+        "list": "Lieste",
+        "child": "Hör na de melodie",
+        "back": "Weerumme",
+        "map": "Kaorte",
+        "keyboard": "Toetsenbord",
+        "next": "Volgende",
+        "tours": "Bezoeken",
+        "accept": "Aksepteren",
+        "send": "Versturen",
+        "successSend": "Joew waordering is succesvol verstuurd",
+        "thanks": "Daank joe wel",
+        "ok": "Goed",
+        "cancel": "Aofbreken",
+        "accessibility": {
+            "title": "Toongänkelikheid",
+            "description": "Hieronder ku'j, as ie da'w wilt, de volgende toongänkelikidheidsfunkties veur de applikaosie activeren.",
+            "enableSignLanguage": "Gebarentaal",
+            "enableAudioDescription": "Audiobeskriewing",
+            "enableSubtitles": "Ondertiteling"
+        },
+        "headsetModal": {
+            "title": "Maak joe klaor um te luustern",
+            "description": "Um aandere gebrukers neet te störn, hol joew mobiele apparaat bi'j joew ore of sluit koptelefoon an.",
+            "notAgain": "Dit bericht neet weer tonen"
+        },
+        "menu": {
+            "language": "Talen",
+            "survey": "Vraogenlieste",
+            "information": "Infermaosie",
+            "location": "Plaots"
+        },
+        "crv": {
+            "sincronize": "Geluud gesynchroniseerd mit de video van de zaole",
+            "mastersync": "Geluud an't synchroniseren"
+        },
+        "error": {
+            "title": "Aofspeulfout",
+            "description": "Op dit moment is 't neet meugelik west um te synchroniseren mit de video, prebeer 't over een paor minuten weer of vraog an oons personeel.",
+            "pause": "Fout bi'j pauseren"
+        },
+        "instructions": {
+            "title": "Disse zaole het audiovisuele inhoud",
+            "description": "Druk op de knop op 't scherm **Audiovisueel synchroniseren**.\n\nIe zeen de video op 't scherm van de zaole terwiels ie van 't gesynchroniseerde geluud geneet direkt in joew koptelefoon.",
+            "button": "Audiovisueel synchroniseren",
+            "description2": "Synchroniseer de audiovisuele inhoud op joew mobiel, druk op 't aofspeulikoon en hol de telefoon bi'j joew ore"
+        },
+        "survey": {
+            "title": "BEOORDEEL JOE ERVARING",
+            "description": "Neem een minuut de tied um de enquête in te vullen en help ons de dienst te verbeteren",
+            "correct": "Enquête correct invuld. Dank joe wel"
+        },
+        "maps": {
+            "0": "Beganegrond",
+            "1": "Tussenverdieping",
+            "3": "Halfverdieping",
+            "5": "Zolder",
+            "-1": "Kelder",
+            "2": "Heufverdieping",
+            "4": "Slaopkaomers",
+            "6": "Daktersas",
+            "presentation": "Presentaosie",
+            "garage": "Garaozje",
+            "basementRamp": "Toegang naor de kelder en hellingbaane",
+            "lobby": "Vestibule",
+            "stairs": "Toegang naor tussenverdieping en trappe",
+            "homeLobby": "Vestibule van de woning en trappe",
+            "nobleFloor": "Toegang naor heufverdieping en trappe",
+            "musicCourt": "Muzikaantenribune",
+            "bedroomsStairs": "Toegang naor de verdieping van de slaopkaomers en trappe",
+            "loft": "Zolder. Tentoonstellingsruumte",
+            "roof": "Toegang naor daktersas en trappe",
+            "stable": "Stal",
+            "groundFloor": "Toegang naor vestibule van beganegrond en hellingbaane",
+            "anteroom": "Veurkaomer",
+            "trustRoomCourtRoom": "Vertrouwenskaomer en ribunekaomer",
+            "diningRoom": "Eetkaomer",
+            "corridor": "Gang",
+            "noonRoof": "Middagtersas en achtergewel",
+            "paintingWorkshop": "Biljartvleugel en schilder- en beeldhouwerswerkplaots",
+            "lostSteps": "Zaole van de verloren stappen",
+            "visitingRoom": "Bezeukkaomer en damestoilet",
+            "centralRoom": "Sentraole zaole 1",
+            "centralRoom2": "Sentraole zaole 2",
+            "stairsAccess": "Toegang naor halfverdieping en trappe",
+            "trustRoom": "Vertrouwenskaomer",
+            "isabelLopez": "Slaopkaomer van Isabel López",
+            "sonsRoom": "Slaopkaomer en studeerkaomer van de zeuns Güell López",
+            "blueRoom": "Aolde badkaomer, sanitaire ruumtes en blaauwe kaomer. Audiovisueel",
+            "eusebisRoom": "Slaopkaomer van Eusebi Güell",
+            "serviceStair": "Dienstrappe",
+            "roofTop": "Daktersas",
+            "groundRoomExit": "Toegang naor beganegrond, uutgang en trappe"
+        },
+        "keyboards": {
+            "contentOutOfTour": "Disse inhoud is gien onderdeel van de hudige rondleiding. Wil ie of'sluten um 't te zien?",
+            "contentNotFoundInAnyTour": "De inhoud dee'j prebeerst te zeuken besteet neet"
+        },
+        "download": {
+            "title": "Rondleiding downloaden",
+            "description": "Wil ie de inhoud van disse rondleiding downloaden um de applikaosie zonder verbinding te gebruken?",
+            "size": "Downloadgrootte",
+            "download": "Downloaden",
+            "online": "Online deurgaon",
+            "downloading": "Rondleiding an't downloaden",
+            "success": "Download klaor"
+        },
+        "attentionTitle": "Let op",
+        "contentNotAvailable": "Inhoud neet beschikbaar",
+        "floor": "Verdieping",
+        "keyboardSearchText": "",
+        "mapNotAvailable": "Kaorte neet beschikbaar",
+        "resourceNotFound": "Inhoud neet bevunn'n"
+    }
+}

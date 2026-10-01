@@ -1,0 +1,135 @@
+{
+    "i18n": {
+        "languages": {
+            "ar-AR": "العربية",
+            "de-DE": "Deutsch",
+            "en-UK": "English",
+            "es-CA": "Català",
+            "es-ES": "Castellano",
+            "es-EU": "Euskara",
+            "es-GL": "Galego",
+            "fr-FR": "Français",
+            "hu-HU": "Magyar",
+            "it-IT": "Italiano",
+            "ja-JA": "日本語",
+            "ko-KR": "한국어",
+            "pt-PT": "Português",
+            "ru-RU": "Pусский",
+            "zh-MAN": "中文",
+            "nds-NL": "Nedersaksisch"
+        },
+        "startVisit": "Start visit",
+        "child": "Listen to the melody",
+        "list": "List",
+        "back": "Back",
+        "map": "Map",
+        "keyboard": "Keyboard",
+        "next": "Next",
+        "tours": "Visits",
+        "accept": "Accept",
+        "send": "Send",
+        "successSend": "Your rating has been sent successfully",
+        "thanks": "Thank you",
+        "ok": "Okay",
+        "cancel": "Cancel",
+        "accessibility": {
+            "title": "Accessibility",
+            "description": "You can, if you wish, activate the following accessibility features for the application.",
+            "enableSignLanguage": "Sign language",
+            "enableAudioDescription": "Audio description",
+            "enableSubtitles": "Subtitles"
+        },
+        "headsetModal": {
+            "title": "Prepare to listen",
+            "description": "To avoid disturbing other users, place your mobile device near your ear or connect headphones.",
+            "notAgain": "Do not show me this message again"
+        },
+        "menu": {
+            "language": "Languages",
+            "survey": "Survey",
+            "information": "Information",
+            "location": "Location"
+        },
+        "crv": {
+            "sincronize": "Audio synchronised with the room video",
+            "mastersync": "Synchronising audio"
+        },
+        "error": {
+            "title": "Playback error",
+            "description": "At this time it has not been possible to synchronise with the video, please try again in a few minutes or consult our staff.",
+            "pause": "Error while pausing"
+        },
+        "instructions": {
+            "title": "This room features audiovisual content",
+            "description": "Press the button on the screen **Synchronise Audiovisual**.\n\nYou will see the video on the room screen while enjoying the synchronised sound directly through your headphones.",
+            "button": "Synchronise Audiovisual",
+            "description2": "Synchronise the audiovisual on your mobile, press the play icon and bring the phone close to your ear"
+        },
+        "survey": {
+            "title": "RATE YOUR EXPERIENCE",
+            "description": "Take a minute to complete the survey and help us improve the service",
+            "correct": "Survey completed correctly. Thank you"
+        },
+        "maps": {
+            "0": "Ground floor",
+            "1": "Mezzanine",
+            "3": "Entresol",
+            "5": "Attic",
+            "-1": "Basement",
+            "2": "Noble floor",
+            "4": "Bedrooms",
+            "6": "Roof terrace",
+            "presentation": "Presentation",
+            "garage": "Garage",
+            "basementRamp": "Access to basement and ramp",
+            "lobby": "Lobby",
+            "stairs": "Access to mezzanine and stairs",
+            "homeLobby": "House lobby and staircase",
+            "nobleFloor": "Access to noble floor and stairs",
+            "musicCourt": "Musicians' court",
+            "bedroomsStairs": "Access to bedroom floor and staircase",
+            "loft": "Attic. Exhibition space",
+            "roof": "Access to roof terrace and staircase",
+            "stable": "Stable",
+            "groundFloor": "Access to ground floor lobby and ramp",
+            "anteroom": "Anteroom",
+            "trustRoomCourtRoom": "Trust room and gallery room",
+            "diningRoom": "Dining room",
+            "corridor": "Corridor",
+            "noonRoof": "Midday terrace and rear façade",
+            "paintingWorkshop": "Billiard wing and painting and sculpture workshop",
+            "lostSteps": "Hall of lost steps",
+            "visitingRoom": "Visiting room and ladies' dressing room",
+            "centralRoom": "Central lounge 1",
+            "centralRoom2": "Central lounge 2",
+            "stairsAccess": "Access to entresol and stairs",
+            "trustRoom": "Trust room",
+            "isabelLopez": "Isabel López's bedroom",
+            "sonsRoom": "Bedroom and study room of the Güell López sons",
+            "blueRoom": "Old bathroom, sanitary facilities and blue room. Audiovisual",
+            "eusebisRoom": "Eusebi Güell's bedroom",
+            "serviceStair": "Service staircase",
+            "roofTop": "Roof terrace",
+            "groundRoomExit": "Access to ground floor, exit and staircase"
+        },
+        "keyboards": {
+            "contentOutOfTour": "This content is not part of the current tour. Do you want to exit to view it?",
+            "contentNotFoundInAnyTour": "The content you are trying to search for does not exist"
+        },
+        "download": {
+            "title": "Tour download",
+            "description": "Do you wish to download the contents of this tour to use the application offline?",
+            "size": "Download size",
+            "download": "Download",
+            "online": "Continue online",
+            "downloading": "Downloading tour",
+            "success": "Download completed"
+        },
+        "attentionTitle": "Attention",
+        "contentNotAvailable": "Content not available",
+        "floor": "Floor",
+        "keyboardSearchText": "",
+        "mapNotAvailable": "Map not available",
+        "resourceNotFound": "Content not found"
+    }
+}

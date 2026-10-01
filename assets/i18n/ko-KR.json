@@ -1,0 +1,135 @@
+{
+    "i18n": {
+        "languages": {
+            "ar-AR": "العربية",
+            "de-DE": "Deutsch",
+            "en-UK": "English",
+            "es-CA": "Català",
+            "es-ES": "Castellano",
+            "es-EU": "Euskara",
+            "es-GL": "Galego",
+            "fr-FR": "Français",
+            "hu-HU": "Magyar",
+            "it-IT": "Italiano",
+            "ja-JA": "日本語",
+            "ko-KR": "한국어",
+            "pt-PT": "Português",
+            "ru-RU": "Pусский",
+            "zh-MAN": "中文",
+            "nds-NL": "Nedersaksisch"
+        },
+        "startVisit": "방문 시작",
+        "list": "목록",
+        "child": "멜로디를 들어보세요",
+        "back": "이전",
+        "map": "지도",
+        "keyboard": "키보드",
+        "next": "다음",
+        "tours": "방문",
+        "accept": "수락",
+        "send": "전송",
+        "successSend": "평가가 성공적으로 전송되었습니다",
+        "thanks": "감사합니다",
+        "ok": "확인",
+        "cancel": "취소",
+        "accessibility": {
+            "title": "접근성",
+            "description": "원하시는 경우 애플리케이션에 대한 다음 접근성 기능을 활성화할 수 있습니다.",
+            "enableSignLanguage": "수화",
+            "enableAudioDescription": "음성 설명",
+            "enableSubtitles": "자막"
+        },
+        "headsetModal": {
+            "title": "듣기 준비",
+            "description": "다른 사용자에게 방해가 되지 않도록 모바일 장치를 귀에 가까이 대거나 헤드폰을 연결하세요.",
+            "notAgain": "이 메시지를 다시 표시하지 않음"
+        },
+        "menu": {
+            "language": "언어",
+            "survey": "설문조사",
+            "information": "정보",
+            "location": "위치"
+        },
+        "crv": {
+            "sincronize": "실내 비디오와 동기화된 오디오",
+            "mastersync": "오디오 동기화 중"
+        },
+        "error": {
+            "title": "재생 오류",
+            "description": "현재 비디오와 동기화할 수 없습니다. 몇 분 후에 다시 시도하거나 직원에게 문의하십시오.",
+            "pause": "일시정지 오류"
+        },
+        "instructions": {
+            "title": "이 방에는 시청각 콘텐츠가 있습니다",
+            "description": "화면의 버튼을 누르세요 **시청각 동기화**.\n\n헤드폰으로 동기화된 음향을 즐기면서 방 화면에서 비디오를 볼 수 있습니다.",
+            "button": "시청각 동기화",
+            "description2": "휴대폰에서 시청각을 동기화하고 재생 아이콘을 누른 다음 전화기를 귀에 가까이 가져가세요"
+        },
+        "survey": {
+            "title": "경험을 평가해주세요",
+            "description": "1분만 시간을 내어 설문조사를 완료하고 서비스 개선에 도움을 주세요",
+            "correct": "설문조사가 정확히 완료되었습니다. 감사합니다"
+        },
+        "maps": {
+            "0": "1층",
+            "1": "중간층",
+            "3": "중층",
+            "5": "다락방",
+            "-1": "지하",
+            "2": "귀족층",
+            "4": "침실",
+            "6": "옥상 테라스",
+            "presentation": "프레젠테이션",
+            "garage": "차고",
+            "basementRamp": "지하 및 경사로 접근",
+            "lobby": "로비",
+            "stairs": "중간층 및 계단 접근",
+            "homeLobby": "주택 로비 및 계단",
+            "nobleFloor": "귀족층 및 계단 접근",
+            "musicCourt": "음악가의 법정",
+            "bedroomsStairs": "침실층 및 계단 접근",
+            "loft": "다락방. 전시 공간",
+            "roof": "옥상 테라스 및 계단 접근",
+            "stable": "마구간",
+            "groundFloor": "1층 로비 및 경사로 접근",
+            "anteroom": "대기실",
+            "trustRoomCourtRoom": "신뢰의 방과 갤러리 룸",
+            "diningRoom": "식당",
+            "corridor": "복도",
+            "noonRoof": "정오의 테라스와 후면 파사드",
+            "paintingWorkshop": "당구 날개와 회화 및 조각 작업실",
+            "lostSteps": "잃어버린 발걸음의 방",
+            "visitingRoom": "방문객실과 여성 화장실",
+            "centralRoom": "중앙 살롱 1",
+            "centralRoom2": "중앙 살롱 2",
+            "stairsAccess": "중층 및 계단 접근",
+            "trustRoom": "신뢰의 방",
+            "isabelLopez": "이사벨 로페스의 침실",
+            "sonsRoom": "구엘 로페스 아들들의 침실과 학습실",
+            "blueRoom": "옛 욕실, 위생 시설 및 파란 방. 시청각",
+            "eusebisRoom": "에우세비 구엘의 침실",
+            "serviceStair": "서비스 계단",
+            "roofTop": "옥상 테라스",
+            "groundRoomExit": "1층 접근, 출구 및 계단"
+        },
+        "keyboards": {
+            "contentOutOfTour": "이 콘텐츠는 현재 투어의 일부가 아닙니다. 보기 위해 종료하시겠습니까?",
+            "contentNotFoundInAnyTour": "검색하려는 콘텐츠가 존재하지 않습니다"
+        },
+        "download": {
+            "title": "투어 다운로드",
+            "description": "오프라인에서 애플리케이션을 사용하기 위해 이 투어의 콘텐츠를 다운로드하시겠습니까?",
+            "size": "다운로드 크기",
+            "download": "다운로드",
+            "online": "온라인 계속",
+            "downloading": "투어 다운로드 중",
+            "success": "다운로드 완료"
+        },
+        "attentionTitle": "주의",
+        "contentNotAvailable": "콘텐츠를 사용할 수 없습니다",
+        "floor": "층",
+        "keyboardSearchText": "",
+        "mapNotAvailable": "지도를 사용할 수 없습니다",
+        "resourceNotFound": "콘텐츠를 찾을 수 없습니다"
+    }
+}

@@ -1,0 +1,135 @@
+{
+    "i18n": {
+        "languages": {
+            "ar-AR": "العربية",
+            "de-DE": "Deutsch",
+            "en-UK": "English",
+            "es-CA": "Català",
+            "es-ES": "Castellano",
+            "es-EU": "Euskara",
+            "es-GL": "Galego",
+            "fr-FR": "Français",
+            "hu-HU": "Magyar",
+            "it-IT": "Italiano",
+            "ja-JA": "日本語",
+            "ko-KR": "한국어",
+            "pt-PT": "Português",
+            "ru-RU": "Pусский",
+            "zh-MAN": "中文",
+            "nds-NL": "Nedersaksisch"
+        },
+        "startVisit": "Bisita hasi",
+        "child": "Entzun melodia",
+        "list": "Zerrenda",
+        "back": "Aurrekoa",
+        "map": "Planoa",
+        "keyboard": "Teklatua",
+        "next": "Hurrengoa",
+        "tours": "Bisitak",
+        "accept": "Onartu",
+        "send": "Bidali",
+        "successSend": "Zure balorazioa behar bezala bidali da",
+        "thanks": "Eskerrik asko",
+        "ok": "Ados",
+        "cancel": "Ezeztatu",
+        "accessibility": {
+            "title": "Irisgarritasuna",
+            "description": "Jarraian, nahi izanez gero, aplikaziorako irisgarritasun ezaugarri hauek aktiba ditzakezu.",
+            "enableSignLanguage": "Zeinu hizkuntza",
+            "enableAudioDescription": "Audio deskribapena",
+            "enableSubtitles": "Azpitituluak"
+        },
+        "headsetModal": {
+            "title": "Prestatu entzuteko",
+            "description": "Beste erabiltzaileak gogaitu ez ditzazun, jarri zure gailu mugikorra belarrira hurbil edo konektatu entzungailuak.",
+            "notAgain": "Ez erakutsi mezu hau berriro"
+        },
+        "menu": {
+            "language": "Hizkuntzak",
+            "survey": "Galdetegia",
+            "information": "Informazioa",
+            "location": "Kokapena"
+        },
+        "crv": {
+            "sincronize": "Gela bideoarekin sinkronizatutako audioa",
+            "mastersync": "Audioa sinkronizatzen"
+        },
+        "error": {
+            "title": "Erreprodukzio errorea",
+            "description": "Une honetan ez da posible izan bideoarekin sinkronizazioa egitea, saiatu minuto batzuen buruan edo kontsultatu gure langileekin.",
+            "pause": "Errorea pausatzean"
+        },
+        "instructions": {
+            "title": "Gela honek ikus-entzunezko edukia du",
+            "description": "Sakatu pantailako botoia **Ikus-entzunezkoa sinkronizatu**.\n\nBideoa gelako pantailan ikusiko duzu zure entzungailuetatik zuzenean soinua gozatzen duzun bitartean.",
+            "button": "Ikus-entzunezkoa sinkronizatu",
+            "description2": "Sinkronizatu ikus-entzunezkoa zure mugikorrean, sakatu play ikonoa eta hurbildu telefonoa belarrirantz"
+        },
+        "survey": {
+            "title": "BALORATU ZURE ESPERIENTZIA",
+            "description": "Hartu minutu bat inkesta osatzeko eta lagun gaitzazu zerbitzua hobetzen",
+            "correct": "Inkesta zuzen bete da. Eskerrik asko"
+        },
+        "maps": {
+            "0": "Behe solairua",
+            "1": "Tarteko solairua",
+            "3": "Erdiko solairua",
+            "5": "Ganbara",
+            "-1": "Sotoa",
+            "2": "Solairu noblea",
+            "4": "Logelak",
+            "6": "Teilatua",
+            "presentation": "Aurkezpena",
+            "garage": "Garajea",
+            "basementRamp": "Sotorantz eta rampara sarrera",
+            "lobby": "Ataria",
+            "stairs": "Tarteko solairu eta eskailera sarrera",
+            "homeLobby": "Etxebizitzaren ataria eta eskailerak",
+            "nobleFloor": "Solairu noblerako sarrera eta eskailera",
+            "musicCourt": "Musikarien epaitokia",
+            "bedroomsStairs": "Logelen solairura sarrera eta eskailerak",
+            "loft": "Ganbara. Erakusketa gunea",
+            "roof": "Teilaturako sarrera eta eskailerak",
+            "stable": "Zalditegia",
+            "groundFloor": "Behe solairuko atarirako sarrera eta rampa",
+            "anteroom": "Aurresala",
+            "trustRoomCourtRoom": "Konfiantza gela eta tribuna gela",
+            "diningRoom": "Jangela",
+            "corridor": "Korridorea",
+            "noonRoof": "Eguerdiko terraza eta atzealdeko fatxada",
+            "paintingWorkshop": "Billar hegala eta margolaritza eta eskultura tailerra",
+            "lostSteps": "Pausu galduen gela",
+            "visitingRoom": "Bisita gela eta andreen apaindegia",
+            "centralRoom": "Erdiko saloia 1",
+            "centralRoom2": "Erdiko saloia 2",
+            "stairsAccess": "Erdiko solairura sarrera eta eskailera",
+            "trustRoom": "Konfiantza gela",
+            "isabelLopez": "Isabel López-en logela",
+            "sonsRoom": "Güell López semeen logela eta ikasketa gela",
+            "blueRoom": "Bainugela zaharra, sanitario gelak eta gela urdina. Ikus-entzunezkoa",
+            "eusebisRoom": "Eusebi Güell-en logela",
+            "serviceStair": "Zerbitzu eskailerak",
+            "roofTop": "Teilatua",
+            "groundRoomExit": "Behe solairura sarrera, irteera eta eskailerak"
+        },
+        "keyboards": {
+            "contentOutOfTour": "Eduki hau ez da uneko ibilbidearen parte. Ikusi nahi duzu irten?",
+            "contentNotFoundInAnyTour": "Bilatzen ari zaren edukia ez da existitzen"
+        },
+        "download": {
+            "title": "Ibilbidearen deskarga",
+            "description": "Ibilbide honen edukiak deskargatu nahi dituzu aplikazioa lineaz kanpo erabiltzeko?",
+            "size": "Deskargaren tamaina",
+            "download": "Deskargatu",
+            "online": "Linean jarraitu",
+            "downloading": "Ibilbidea deskargatzen",
+            "success": "Deskarga osatuta"
+        },
+        "attentionTitle": "Kontuz",
+        "contentNotAvailable": "Edukia ez dago erabilgarri",
+        "floor": "Solairua",
+        "keyboardSearchText": "",
+        "mapNotAvailable": "Planoa ez dago erabilgarri",
+        "resourceNotFound": "Edukia ez da aurkitu"
+    }
+}

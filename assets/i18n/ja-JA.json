@@ -1,0 +1,135 @@
+{
+    "i18n": {
+        "languages": {
+            "ar-AR": "العربية",
+            "de-DE": "Deutsch",
+            "en-UK": "English",
+            "es-CA": "Català",
+            "es-ES": "Castellano",
+            "es-EU": "Euskara",
+            "es-GL": "Galego",
+            "fr-FR": "Français",
+            "hu-HU": "Magyar",
+            "it-IT": "Italiano",
+            "ja-JA": "日本語",
+            "ko-KR": "한국어",
+            "pt-PT": "Português",
+            "ru-RU": "Pусский",
+            "zh-MAN": "中文",
+            "nds-NL": "Nedersaksisch"
+        },
+        "startVisit": "見学を開始",
+        "list": "リスト",
+        "child": "メロディーを聴いて",
+        "back": "戻る",
+        "map": "地図",
+        "keyboard": "キーボード",
+        "next": "次へ",
+        "tours": "見学",
+        "accept": "承認",
+        "send": "送信",
+        "successSend": "評価が正常に送信されました",
+        "thanks": "ありがとうございます",
+        "ok": "了解",
+        "cancel": "キャンセル",
+        "accessibility": {
+            "title": "アクセシビリティ",
+            "description": "ご希望の場合、アプリケーションの以下のアクセシビリティ機能を有効にできます。",
+            "enableSignLanguage": "手話",
+            "enableAudioDescription": "音声解説",
+            "enableSubtitles": "字幕"
+        },
+        "headsetModal": {
+            "title": "聴く準備をしてください",
+            "description": "他のユーザーの迷惑にならないよう、モバイルデバイスを耳に近づけるか、ヘッドフォンを接続してください。",
+            "notAgain": "このメッセージを再度表示しない"
+        },
+        "menu": {
+            "language": "言語",
+            "survey": "アンケート",
+            "information": "情報",
+            "location": "場所"
+        },
+        "crv": {
+            "sincronize": "部屋のビデオと同期された音声",
+            "mastersync": "音声を同期中"
+        },
+        "error": {
+            "title": "再生エラー",
+            "description": "現在、ビデオとの同期ができませんでした。数分後に再試行するか、スタッフにお問い合わせください。",
+            "pause": "一時停止エラー"
+        },
+        "instructions": {
+            "title": "この部屋には視聴覚コンテンツがあります",
+            "description": "画面のボタンを押してください **音声を同期する**。\n\nヘッドフォンで同期された音声を楽しみながら、部屋の画面でビデオをご覧いただけます。",
+            "button": "音声を同期する",
+            "description2": "モバイルで音声を同期し、再生アイコンを押して電話を耳に近づけてください"
+        },
+        "survey": {
+            "title": "体験を評価してください",
+            "description": "1分間でアンケートに回答し、サービス向上にご協力ください",
+            "correct": "アンケートが正しく記入されました。ありがとうございます"
+        },
+        "maps": {
+            "0": "1階",
+            "1": "中2階",
+            "3": "中間階",
+            "5": "屋根裏",
+            "-1": "地下",
+            "2": "メインフロア",
+            "4": "寝室",
+            "6": "屋上テラス",
+            "presentation": "プレゼンテーション",
+            "garage": "ガレージ",
+            "basementRamp": "地下とスロープへのアクセス",
+            "lobby": "ロビー",
+            "stairs": "中2階と階段へのアクセス",
+            "homeLobby": "住居のロビーと階段",
+            "nobleFloor": "メインフロアと階段へのアクセス",
+            "musicCourt": "音楽家の法廷",
+            "bedroomsStairs": "寝室階と階段へのアクセス",
+            "loft": "屋根裏。展示スペース",
+            "roof": "屋上テラスと階段へのアクセス",
+            "stable": "厩舎",
+            "groundFloor": "1階ロビーとスロープへのアクセス",
+            "anteroom": "控室",
+            "trustRoomCourtRoom": "信頼の部屋とギャラリールーム",
+            "diningRoom": "ダイニングルーム",
+            "corridor": "廊下",
+            "noonRoof": "正午のテラスと後部ファサード",
+            "paintingWorkshop": "ビリヤード棟と絵画・彫刻工房",
+            "lostSteps": "失われた足跡の部屋",
+            "visitingRoom": "訪問室と女性用化粧室",
+            "centralRoom": "中央サロン1",
+            "centralRoom2": "中央サロン2",
+            "stairsAccess": "中間階と階段へのアクセス",
+            "trustRoom": "信頼の部屋",
+            "isabelLopez": "イサベル・ロペスの寝室",
+            "sonsRoom": "グエル・ロペス息子たちの寝室と勉強部屋",
+            "blueRoom": "古い浴室、衛生施設、ブルールーム。視聴覚",
+            "eusebisRoom": "エウセビ・グエルの寝室",
+            "serviceStair": "サービス階段",
+            "roofTop": "屋上テラス",
+            "groundRoomExit": "1階、出口、階段へのアクセス"
+        },
+        "keyboards": {
+            "contentOutOfTour": "このコンテンツは現在のツアーの一部ではありません。表示するために終了しますか?",
+            "contentNotFoundInAnyTour": "検索しようとしているコンテンツは存在しません"
+        },
+        "download": {
+            "title": "ツアーのダウンロード",
+            "description": "オフラインでアプリケーションを使用するために、このツアーのコンテンツをダウンロードしますか?",
+            "size": "ダウンロードサイズ",
+            "download": "ダウンロード",
+            "online": "オンラインで続行",
+            "downloading": "ツアーをダウンロード中",
+            "success": "ダウンロード完了"
+        },
+        "attentionTitle": "注意",
+        "contentNotAvailable": "コンテンツを利用できません",
+        "floor": "フロア",
+        "keyboardSearchText": "",
+        "mapNotAvailable": "地図を利用できません",
+        "resourceNotFound": "コンテンツが見つかりません"
+    }
+}

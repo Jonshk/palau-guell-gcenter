@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Visor de Video 360</title>
+    <!-- Incluir A-Frame -->
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <style>
+        .controls {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .controls button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            outline: none;
+            flex-shrink: 0;
+        }
+
+        .controls #restartBtn {
+            font-size: 24px;
+            /* Aumentar el tamaño del ícono de reinicio */
+        }
+
+        .controls input[type="range"] {
+            flex-grow: 1;
+            margin: 0 10px;
+            accent-color: white;
+            transition: opacity .2s;
+        }
+
+        .controls input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 15px;
+            height: 15px;
+            background: #fff;
+            cursor: pointer;
+        }
+
+        .controls input[type="range"]::-moz-range-thumb {
+            width: 15px;
+            height: 15px;
+            background: #fff;
+            cursor: pointer;
+        }
+
+        .controls .time {
+            color: white;
+            font-size: 14px;
+            flex-shrink: 0;
+            width: 50px;
+            text-align: center;
+        }
+
+        #fullscreenBtn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <a-scene vr-mode-ui="enabled: false">
+        <a-videosphere src="#video360" rotation="0 -90 0"></a-videosphere>
+
+        <a-assets>
+            <video id="video360" crossorigin="anonymous" playsinline>
+                <source src="" type="video/mp4" id="prueba">
+            </video>
+        </a-assets>
+    </a-scene>
+
+    <button id="fullscreenBtn" onclick="toggleFullscreen()">&#x26F6;</button>
+
+    <div class="controls">
+        <button id="playPauseBtn" onclick="togglePlayPause()"><svg width="20" height="20" viewBox="0 0 24 24"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 5v14l11-7L8 5z" fill="white" />
+            </svg></button>
+        <div class="time" id="currentTime">0:00</div>
+        <input type="range" id="seekSlider" min="0" max="100" value="0" step="0.01" onchange="seekVideo()">
+        <div class="time" id="duration">0:00</div>
+        <button id="restartBtn" onclick="restartVideo()">&#10226;</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const video = document.getElementById('video360');
+            const playPauseBtn = document.getElementById('playPauseBtn');
+            const currentTimeDisplay = document.getElementById('currentTime');
+            const durationDisplay = document.getElementById('duration');
+            const seekSlider = document.getElementById('seekSlider');
+
+            window.addPanorama = function (url) {
+                video.src = url;
+                video.load();
+            }
+
+            window.addEventListener('message', (event) => {
+                if (event.data != undefined) {
+                    try {
+                        var message = JSON.parse(event.data);
+                        addPanorama(message.urlPanorama);
+                    } catch (error) {
+                        console.error('Error al parsear el mensaje JSON:' + error);
+                    }
+                }
+            });
+
+            video.addEventListener('loadedmetadata', () => {
+                durationDisplay.textContent = formatTime(video.duration);
+                seekSlider.max = video.duration;
+            });
+
+            video.addEventListener('timeupdate', () => {
+                currentTimeDisplay.textContent = formatTime(video.currentTime);
+                seekSlider.value = video.currentTime;
+            });
+
+            video.addEventListener('ended', () => {
+                playPauseBtn.innerHTML = `
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 5v14l11-7L8 5z" fill="white"/>
+                        </svg>
+                    `;
+                window.parent.postMessage('stop', '*');
+            });
+
+            window.togglePlayPause = function () {
+                if (video.paused) {
+                    video.play();
+                    playPauseBtn.innerHTML = '&#10074;&#10074;';
+                    window.parent.postMessage('play', '*');
+                } else {
+                    video.pause();
+                    playPauseBtn.innerHTML = `
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 5v14l11-7L8 5z" fill="white"/>
+                        </svg>
+                    `;
+                    window.parent.postMessage('pause', '*');
+                }
+            }
+
+            window.seekVideo = function () {
+                video.currentTime = seekSlider.value;
+            }
+
+            window.restartVideo = function () {
+                video.currentTime = 0;
+                video.play();
+                playPauseBtn.innerHTML = '&#10074;&#10074;';
+            }
+
+            window.toggleFullscreen = function () {
+                window.parent.postMessage('fullScreen', '*');
+            }
+
+            function formatTime(seconds) {
+                const minutes = Math.floor(seconds / 60);
+                const secs = Math.floor(seconds % 60);
+                return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
+            }
+        });
+    </script>
+</body>
+
+</html>

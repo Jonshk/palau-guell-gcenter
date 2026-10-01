@@ -1,0 +1,135 @@
+{
+    "i18n": {
+        "languages": {
+            "ar-AR": "العربية",
+            "de-DE": "Deutsch",
+            "en-UK": "English",
+            "es-CA": "Català",
+            "es-ES": "Castellano",
+            "es-EU": "Euskara",
+            "es-GL": "Galego",
+            "fr-FR": "Français",
+            "hu-HU": "Magyar",
+            "it-IT": "Italiano",
+            "ja-JA": "日本語",
+            "ko-KR": "한국어",
+            "pt-PT": "Português",
+            "ru-RU": "Pусский",
+            "zh-MAN": "中文",
+            "nds-NL": "Nedersaksisch"
+        },
+        "startVisit": "Começar visita",
+        "list": "Listagem",
+        "child": "Ouve a melodia",
+        "back": "Anterior",
+        "map": "Plano",
+        "keyboard": "Teclado",
+        "next": "Seguinte",
+        "tours": "Visitas",
+        "accept": "Aceitar",
+        "send": "Enviar",
+        "successSend": "A sua avaliação foi enviada com sucesso",
+        "thanks": "Obrigado",
+        "ok": "De acordo",
+        "cancel": "Cancelar",
+        "accessibility": {
+            "title": "Acessibilidade",
+            "description": "De seguida pode, se desejar, ativar as seguintes características de acessibilidade para a aplicação.",
+            "enableSignLanguage": "Língua gestual",
+            "enableAudioDescription": "Audiodescrição",
+            "enableSubtitles": "Legendas"
+        },
+        "headsetModal": {
+            "title": "Prepare-se para ouvir",
+            "description": "Para evitar incomodar outros utilizadores, coloque o seu dispositivo móvel perto do ouvido ou ligue uns auscultadores.",
+            "notAgain": "Não voltar a mostrar esta mensagem"
+        },
+        "menu": {
+            "language": "Idiomas",
+            "survey": "Questionário",
+            "information": "Informação",
+            "location": "Localização"
+        },
+        "crv": {
+            "sincronize": "Áudio sincronizado com o vídeo da sala",
+            "mastersync": "A sincronizar áudio"
+        },
+        "error": {
+            "title": "Erro de reprodução",
+            "description": "Neste momento não foi possível realizar a sincronização com o vídeo, tente passados alguns minutos ou consulte o nosso pessoal.",
+            "pause": "Erro ao pausar"
+        },
+        "instructions": {
+            "title": "Esta sala dispõe de um conteúdo audiovisual",
+            "description": "Prima o botão do ecrã **Sincronizar Audiovisual**.\n\nVerá o vídeo no ecrã da sala enquanto desfruta do som sincronizado diretamente nos seus auscultadores.",
+            "button": "Sincronizar Audiovisual",
+            "description2": "Sincronize o audiovisual no seu telemóvel, prima o ícone de reprodução e aproxime o telefone do ouvido"
+        },
+        "survey": {
+            "title": "AVALIE A SUA EXPERIÊNCIA",
+            "description": "Dedique um minuto a completar o inquérito e ajude-nos a melhorar o serviço",
+            "correct": "Inquérito preenchido corretamente. Obrigado"
+        },
+        "maps": {
+            "0": "Rés-do-chão",
+            "1": "Mezanino",
+            "3": "Entrepiso",
+            "5": "Sótão",
+            "-1": "Cave",
+            "2": "Andar nobre",
+            "4": "Quartos",
+            "6": "Terraço",
+            "presentation": "Apresentação",
+            "garage": "Garagem",
+            "basementRamp": "Acesso à cave e rampa",
+            "lobby": "Átrio",
+            "stairs": "Acesso ao mezanino e escadas",
+            "homeLobby": "Átrio da habitação e escada",
+            "nobleFloor": "Acesso ao andar nobre e escadas",
+            "musicCourt": "Tribuna dos músicos",
+            "bedroomsStairs": "Acesso ao piso dos quartos e escada",
+            "loft": "Sótão. Espaço expositivo",
+            "roof": "Acesso ao terraço e escada",
+            "stable": "Cavalariça",
+            "groundFloor": "Acesso ao átrio do rés-do-chão e rampa",
+            "anteroom": "Antessala",
+            "trustRoomCourtRoom": "Sala de confiança e sala de tribuna",
+            "diningRoom": "Sala de jantar",
+            "corridor": "Corredor",
+            "noonRoof": "Terraço do meio-dia e fachada posterior",
+            "paintingWorkshop": "Ala de bilhar e oficina de pintura e escultura",
+            "lostSteps": "Sala dos passos perdidos",
+            "visitingRoom": "Sala de visitas e toucador de senhoras",
+            "centralRoom": "Salão central 1",
+            "centralRoom2": "Salão central 2",
+            "stairsAccess": "Acesso ao entrepiso e escadas",
+            "trustRoom": "Sala de confiança",
+            "isabelLopez": "Quarto de Isabel López",
+            "sonsRoom": "Quarto e sala de estudos dos filhos Güell López",
+            "blueRoom": "Antiga casa de banho, instalações sanitárias e quarto azul. Audiovisual",
+            "eusebisRoom": "Quarto de Eusebi Güell",
+            "serviceStair": "Escada de serviço",
+            "roofTop": "Terraço",
+            "groundRoomExit": "Acesso ao rés-do-chão, saída e escada"
+        },
+        "keyboards": {
+            "contentOutOfTour": "Este conteúdo não faz parte do percurso atual. Deseja sair para o ver?",
+            "contentNotFoundInAnyTour": "O conteúdo que tenta procurar não existe"
+        },
+        "download": {
+            "title": "Descarregar percurso",
+            "description": "Deseja descarregar os conteúdos deste percurso para utilizar a aplicação sem ligação?",
+            "size": "Tamanho da descarga",
+            "download": "Descarregar",
+            "online": "Continuar online",
+            "downloading": "A descarregar percurso",
+            "success": "Descarregamento concluído"
+        },
+        "attentionTitle": "Atenção",
+        "contentNotAvailable": "Conteúdo não disponível",
+        "floor": "Piso",
+        "keyboardSearchText": "",
+        "mapNotAvailable": "Planta não disponível",
+        "resourceNotFound": "Conteúdo não encontrado"
+    }
+}

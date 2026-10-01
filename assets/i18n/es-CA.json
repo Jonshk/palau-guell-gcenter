@@ -1,0 +1,135 @@
+{
+    "i18n": {
+        "languages": {
+            "ar-AR": "العربية",
+            "de-DE": "Deutsch",
+            "en-UK": "English",
+            "es-CA": "Català",
+            "es-ES": "Castellano",
+            "es-EU": "Euskara",
+            "es-GL": "Galego",
+            "fr-FR": "Français",
+            "hu-HU": "Magyar",
+            "it-IT": "Italiano",
+            "ja-JA": "日本語",
+            "ko-KR": "한국어",
+            "pt-PT": "Português",
+            "ru-RU": "Pусский",
+            "zh-MAN": "中文",
+            "nds-NL": "Nedersaksisch"
+        },
+        "startVisit": "Començar visita",
+        "list": "Llistat",
+        "back": "Anterior",
+        "map": "Plànol",
+        "keyboard": "Teclat",
+        "next": "Següent",
+        "tours": "Visites",
+        "accept": "Acceptar",
+        "send": "Enviar",
+        "successSend": "La seva valoració s'ha enviat correctament",
+        "thanks": "Gràcies",
+        "ok": "D'acord",
+        "cancel": "Cancel·lar",
+        "child": "Escolta la melodia",
+        "accessibility": {
+            "title": "Accessibilitat",
+            "description": "A continuació pot, si ho desitja, activar les següents característiques d'accessibilitat per a l'aplicació.",
+            "enableSignLanguage": "Llengua de signes",
+            "enableAudioDescription": "Audiodescripció",
+            "enableSubtitles": "Subtítols"
+        },
+        "headsetModal": {
+            "title": "Prepara't per escoltar",
+            "description": "Per evitar molestar a altres usuaris, col·loqui el seu dispositiu mòbil a prop de l'orella o connecti uns auriculars.",
+            "notAgain": "No tornar a mostrar-me aquest missatge"
+        },
+        "menu": {
+            "language": "Idiomes",
+            "survey": "Qüestionari",
+            "information": "Informació",
+            "location": "Localització"
+        },
+        "crv": {
+            "sincronize": "Àudio sincronitzat amb el vídeo de la sala",
+            "mastersync": "Sincronitzant àudio"
+        },
+        "error": {
+            "title": "Error de reproducció",
+            "description": "En aquests moments no ha estat possible realitzar la sincronització amb el vídeo, provi passats uns minuts o consulti al nostre personal.",
+            "pause": "Error en pausar"
+        },
+        "instructions": {
+            "title": "Aquesta sala disposa d'un contingut audiovisual",
+            "description": "Prem el botó de la pantalla **Sincronitzar Audiovisual**.\n\nVeuràs el vídeo a la pantalla de la sala mentre gaudeixes del so sincronitzat directament als teus auriculars.",
+            "button": "Sincronitzar Audiovisual",
+            "description2": "Sincronitza l'audiovisual al teu mòbil, prem sobre la icona del play i apropa't el telèfon a l'orella"
+        },
+        "survey": {
+            "title": "VALORA LA TEVA EXPERIÈNCIA",
+            "description": "Dedica un minut a completar l'enquesta i ajuda'ns a millorar el servei",
+            "correct": "Enquesta emplenada correctament. Gràcies"
+        },
+        "maps": {
+            "0": "Planta baixa",
+            "1": "Entresòl",
+            "3": "Entreplanta",
+            "5": "Golfes",
+            "-1": "Soterrani",
+            "2": "Planta noble",
+            "4": "Dormitoris",
+            "6": "Terrat",
+            "presentation": "Presentació",
+            "garage": "Cotxera",
+            "basementRamp": "Accés al soterrani i rampa",
+            "lobby": "Vestíbul",
+            "stairs": "Accés a l'entresòl i escales",
+            "homeLobby": "Vestíbul de l'habitatge i escala",
+            "nobleFloor": "Accés a planta noble i escales",
+            "musicCourt": "Tribunal dels músics",
+            "bedroomsStairs": "Accés a la planta dels dormitoris i escala",
+            "loft": "Golfes. Espai expositiu",
+            "roof": "Accés al terrat i escala",
+            "stable": "Cavallerissa",
+            "groundFloor": "Accés al vestíbul de la planta baixa i rampa",
+            "anteroom": "Antesala",
+            "trustRoomCourtRoom": "Sala de confiança i sala de tribuna",
+            "diningRoom": "Menjador",
+            "corridor": "Corredor",
+            "noonRoof": "Terrassa de migdia i façana posterior",
+            "paintingWorkshop": "Ala de billar i taller de pintura i escultura",
+            "lostSteps": "Sala dels passos perduts",
+            "visitingRoom": "Sala de visites i tocador de senyores",
+            "centralRoom": "Saló central 1",
+            "centralRoom2": "Saló central 2",
+            "stairsAccess": "Accés a l'entresòl i escales",
+            "trustRoom": "Sala de confiança",
+            "isabelLopez": "Dormitori d'Isabel López",
+            "sonsRoom": "Dormitori i sala d'estudis dels fills Güell López",
+            "blueRoom": "Antic bany, estances sanitàries i habitació blava. Audiovisual",
+            "eusebisRoom": "Dormitori d'Eusebi Güell",
+            "serviceStair": "Escala de servei",
+            "roofTop": "Terrat",
+            "groundRoomExit": "Accés a la planta baixa, sortida i escala"
+        },
+        "keyboards": {
+            "contentOutOfTour": "Aquest contingut no forma part del recorregut actual. Vols sortir per veure'l?",
+            "contentNotFoundInAnyTour": "El contingut que intenta buscar no existeix"
+        },
+        "download": {
+            "title": "Descàrrega de recorregut",
+            "description": "Desitja descarregar els continguts d'aquest recorregut per utilitzar l'aplicació sense connexió?",
+            "size": "Mida de la descàrrega",
+            "download": "Descarregar",
+            "online": "Continuar en línia",
+            "downloading": "Descarregant recorregut",
+            "success": "Descàrrega completada"
+        },
+        "attentionTitle": "Atenció",
+        "contentNotAvailable": "Contingut no disponible",
+        "floor": "Planta",
+        "keyboardSearchText": "",
+        "mapNotAvailable": "Plànol no disponible",
+        "resourceNotFound": "Contingut no trobat"
+    }
+}

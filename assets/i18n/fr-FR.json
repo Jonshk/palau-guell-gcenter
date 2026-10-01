@@ -1,0 +1,135 @@
+{
+    "i18n": {
+        "languages": {
+            "ar-AR": "العربية",
+            "de-DE": "Deutsch",
+            "en-UK": "English",
+            "es-CA": "Català",
+            "es-ES": "Castellano",
+            "es-EU": "Euskara",
+            "es-GL": "Galego",
+            "fr-FR": "Français",
+            "hu-HU": "Magyar",
+            "it-IT": "Italiano",
+            "ja-JA": "日本語",
+            "ko-KR": "한국어",
+            "pt-PT": "Português",
+            "ru-RU": "Pусский",
+            "zh-MAN": "中文",
+            "nds-NL": "Nedersaksisch"
+        },
+        "startVisit": "Commencer la visite",
+        "list": "Liste",
+        "child": "Écoute la mélodie",
+        "back": "Précédent",
+        "map": "Plan",
+        "keyboard": "Clavier",
+        "next": "Suivant",
+        "tours": "Visites",
+        "accept": "Accepter",
+        "send": "Envoyer",
+        "successSend": "Votre évaluation a été envoyée avec succès",
+        "thanks": "Merci",
+        "ok": "D'accord",
+        "cancel": "Annuler",
+        "accessibility": {
+            "title": "Accessibilité",
+            "description": "Vous pouvez, si vous le souhaitez, activer les fonctionnalités d'accessibilité suivantes pour l'application.",
+            "enableSignLanguage": "Langue des signes",
+            "enableAudioDescription": "Audio-description",
+            "enableSubtitles": "Sous-titres"
+        },
+        "headsetModal": {
+            "title": "Préparez-vous à écouter",
+            "description": "Pour éviter de déranger les autres utilisateurs, placez votre appareil mobile près de votre oreille ou connectez des écouteurs.",
+            "notAgain": "Ne plus afficher ce message"
+        },
+        "menu": {
+            "language": "Langues",
+            "survey": "Questionnaire",
+            "information": "Information",
+            "location": "Localisation"
+        },
+        "crv": {
+            "sincronize": "Audio synchronisé avec la vidéo de la salle",
+            "mastersync": "Synchronisation audio"
+        },
+        "error": {
+            "title": "Erreur de lecture",
+            "description": "Il n'a pas été possible de synchroniser avec la vidéo pour le moment, veuillez réessayer dans quelques minutes ou consulter notre personnel.",
+            "pause": "Erreur lors de la pause"
+        },
+        "instructions": {
+            "title": "Cette salle dispose d'un contenu audiovisuel",
+            "description": "Appuyez sur le bouton de l'écran **Synchroniser l'audiovisuel**.\n\nVous verrez la vidéo sur l'écran de la salle tout en profitant du son synchronisé directement dans vos écouteurs.",
+            "button": "Synchroniser l'audiovisuel",
+            "description2": "Synchronisez l'audiovisuel sur votre mobile, appuyez sur l'icône de lecture et approchez le téléphone de votre oreille"
+        },
+        "survey": {
+            "title": "ÉVALUEZ VOTRE EXPÉRIENCE",
+            "description": "Prenez une minute pour compléter l'enquête et aidez-nous à améliorer le service",
+            "correct": "Enquête remplie correctement. Merci"
+        },
+        "maps": {
+            "0": "Rez-de-chaussée",
+            "1": "Entresol",
+            "3": "Mezzanine",
+            "5": "Grenier",
+            "-1": "Sous-sol",
+            "2": "Étage noble",
+            "4": "Chambres",
+            "6": "Terrasse sur le toit",
+            "presentation": "Présentation",
+            "garage": "Garage",
+            "basementRamp": "Accès au sous-sol et rampe",
+            "lobby": "Hall d'entrée",
+            "stairs": "Accès à l'entresol et escaliers",
+            "homeLobby": "Hall de la maison et escalier",
+            "nobleFloor": "Accès à l'étage noble et escaliers",
+            "musicCourt": "Tribune des musiciens",
+            "bedroomsStairs": "Accès à l'étage des chambres et escalier",
+            "loft": "Grenier. Espace d'exposition",
+            "roof": "Accès à la terrasse sur le toit et escalier",
+            "stable": "Écurie",
+            "groundFloor": "Accès au hall du rez-de-chaussée et rampe",
+            "anteroom": "Antichambre",
+            "trustRoomCourtRoom": "Salon de confiance et salle de tribune",
+            "diningRoom": "Salle à manger",
+            "corridor": "Couloir",
+            "noonRoof": "Terrasse de midi et façade arrière",
+            "paintingWorkshop": "Aile billard et atelier de peinture et sculpture",
+            "lostSteps": "Salle des pas perdus",
+            "visitingRoom": "Salon de réception et boudoir",
+            "centralRoom": "Salon central 1",
+            "centralRoom2": "Salon central 2",
+            "stairsAccess": "Accès à la mezzanine et escaliers",
+            "trustRoom": "Salon de confiance",
+            "isabelLopez": "Chambre d'Isabel López",
+            "sonsRoom": "Chambre et salle d'étude des fils Güell López",
+            "blueRoom": "Ancienne salle de bain, installations sanitaires et chambre bleue. Audiovisuel",
+            "eusebisRoom": "Chambre d'Eusebi Güell",
+            "serviceStair": "Escalier de service",
+            "roofTop": "Terrasse sur le toit",
+            "groundRoomExit": "Accès au rez-de-chaussée, sortie et escalier"
+        },
+        "keyboards": {
+            "contentOutOfTour": "Ce contenu ne fait pas partie du parcours actuel. Voulez-vous quitter pour le voir ?",
+            "contentNotFoundInAnyTour": "Le contenu que vous essayez de rechercher n'existe pas"
+        },
+        "download": {
+            "title": "Téléchargement du parcours",
+            "description": "Souhaitez-vous télécharger le contenu de ce parcours pour utiliser l'application hors ligne ?",
+            "size": "Taille du téléchargement",
+            "download": "Télécharger",
+            "online": "Continuer en ligne",
+            "downloading": "Téléchargement du parcours",
+            "success": "Téléchargement terminé"
+        },
+        "attentionTitle": "Attention",
+        "contentNotAvailable": "Contenu non disponible",
+        "floor": "Étage",
+        "keyboardSearchText": "",
+        "mapNotAvailable": "Plan non disponible",
+        "resourceNotFound": "Contenu introuvable"
+    }
+}

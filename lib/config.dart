@@ -1,0 +1,10 @@
+export 'resources/config/models.dart';
+export 'resources/config/pages.dart';
+export 'resources/config/plugins.dart';
+export 'resources/config/routes.dart';
+export 'resources/config/services.dart';
+export 'resources/config/utils.dart';
+export 'resources/config/views.dart';
+export 'resources/config/widgets.dart';
+export 'resources/constants.dart';
+export 'resources/theme/theme.dart';

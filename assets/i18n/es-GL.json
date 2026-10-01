@@ -1,0 +1,135 @@
+{
+    "i18n": {
+        "languages": {
+            "ar-AR": "العربية",
+            "de-DE": "Deutsch",
+            "en-UK": "English",
+            "es-CA": "Català",
+            "es-ES": "Castellano",
+            "es-EU": "Euskara",
+            "es-GL": "Galego",
+            "fr-FR": "Français",
+            "hu-HU": "Magyar",
+            "it-IT": "Italiano",
+            "ja-JA": "日本語",
+            "ko-KR": "한국어",
+            "pt-PT": "Português",
+            "ru-RU": "Pусский",
+            "zh-MAN": "中文",
+            "nds-NL": "Nedersaksisch"
+        },
+        "startVisit": "Comezar visita",
+        "child": "Escoita a melodía",
+        "list": "Listado",
+        "back": "Anterior",
+        "map": "Plano",
+        "keyboard": "Teclado",
+        "next": "Seguinte",
+        "tours": "Visitas",
+        "accept": "Aceptar",
+        "send": "Enviar",
+        "successSend": "A súa valoración foi enviada correctamente",
+        "thanks": "Grazas",
+        "ok": "De acordo",
+        "cancel": "Cancelar",
+        "accessibility": {
+            "title": "Accesibilidade",
+            "description": "A continuación pode, se o desexa, activar as seguintes características de accesibilidade para a aplicación.",
+            "enableSignLanguage": "Lingua de signos",
+            "enableAudioDescription": "Audio-descrición",
+            "enableSubtitles": "Subtítulos"
+        },
+        "headsetModal": {
+            "title": "Prepárese para escoitar",
+            "description": "Para evitar molestias a outros usuarios, coloque o seu dispositivo móbil preto da orella ou conecte uns auriculares.",
+            "notAgain": "Non voltar amosar esta mensaxe"
+        },
+        "menu": {
+            "language": "Idiomas",
+            "survey": "Cuestionario",
+            "information": "Información",
+            "location": "Localización"
+        },
+        "crv": {
+            "sincronize": "Audio sincronizado co vídeo da sala",
+            "mastersync": "Sincronizando audio"
+        },
+        "error": {
+            "title": "Erro de reprodución",
+            "description": "Nestes momentos non foi posible realizar a sincronización co vídeo, probe pasados uns minutos ou consulte ao noso persoal.",
+            "pause": "Erro ao pausar"
+        },
+        "instructions": {
+            "title": "Esta sala conta cun contido audiovisual",
+            "description": "Preme o botón da pantalla **Sincronizar Audiovisual**.\n\nVerás o vídeo na pantalla da sala mentres gozas do son sincronizado directamente nos teus auriculares.",
+            "button": "Sincronizar Audiovisual",
+            "description2": "Sincroniza o audiovisual no teu móbil, pulsa sobre a icona do play e achega o teléfono á orella"
+        },
+        "survey": {
+            "title": "VALORA A TÚA EXPERIENCIA",
+            "description": "Dedica un minuto a completar a enquisa e axúdanos a mellorar o servizo",
+            "correct": "Enquisa cuberta correctamente. Grazas"
+        },
+        "maps": {
+            "0": "Planta baixa",
+            "1": "Entresuelo",
+            "3": "Entreplanta",
+            "5": "Soto",
+            "-1": "Sótano",
+            "2": "Planta nobre",
+            "4": "Dormitorios",
+            "6": "Azotea",
+            "presentation": "Presentación",
+            "garage": "Cocheira",
+            "basementRamp": "Acceso ao sótano e rampla",
+            "lobby": "Vestíbulo",
+            "stairs": "Acceso ao entresuelo e escaleiras",
+            "homeLobby": "Vestíbulo da vivenda e escaleira",
+            "nobleFloor": "Acceso á planta nobre e escaleiras",
+            "musicCourt": "Tribunal dos músicos",
+            "bedroomsStairs": "Acceso á planta dos dormitorios e escaleira",
+            "loft": "Soto. Espazo expositivo",
+            "roof": "Acceso á azotea e escaleira",
+            "stable": "Cabaleriza",
+            "groundFloor": "Acceso ao vestíbulo da planta baixa e rampla",
+            "anteroom": "Antesala",
+            "trustRoomCourtRoom": "Sala de confianza e sala de tribuna",
+            "diningRoom": "Comedor",
+            "corridor": "Corredor",
+            "noonRoof": "Terraza de mediodía e fachada posterior",
+            "paintingWorkshop": "Ala de billar e taller de pintura e escultura",
+            "lostSteps": "Sala dos pasos perdidos",
+            "visitingRoom": "Sala de visitas e tocador de señoras",
+            "centralRoom": "Salón central 1",
+            "centralRoom2": "Salón central 2",
+            "stairsAccess": "Acceso á entreplanta e escaleiras",
+            "trustRoom": "Sala de confianza",
+            "isabelLopez": "Dormitorio de Isabel López",
+            "sonsRoom": "Dormitorio e sala de estudos dos fillos Güell López",
+            "blueRoom": "Antigo baño, estancias sanitarias e habitación azul. Audiovisual",
+            "eusebisRoom": "Dormitorio de Eusebi Güell",
+            "serviceStair": "Escaleira de servizo",
+            "roofTop": "Azotea",
+            "groundRoomExit": "Acceso á planta baixa, saída e escaleira"
+        },
+        "keyboards": {
+            "contentOutOfTour": "Este contido non forma parte do percorrido actual. Quere saír para velo?",
+            "contentNotFoundInAnyTour": "O contido que intenta buscar non existe"
+        },
+        "download": {
+            "title": "Descarga de percorrido",
+            "description": "Desexa descargar os contidos deste percorrido para usar a aplicación sen conexión?",
+            "size": "Tamaño da descarga",
+            "download": "Descargar",
+            "online": "Continuar en liña",
+            "downloading": "Descargando percorrido",
+            "success": "Descarga completada"
+        },
+        "attentionTitle": "Atención",
+        "contentNotAvailable": "Contido non dispoñible",
+        "floor": "Planta",
+        "keyboardSearchText": "",
+        "mapNotAvailable": "Plano non dispoñible",
+        "resourceNotFound": "Contido non atopado"
+    }
+}

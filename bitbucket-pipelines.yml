@@ -1,0 +1,81 @@
+pipelines:
+  branches:
+    dev:
+      - step:
+          name: "Deploy to staging"
+          image: instrumentisto/flutter:3.41.5
+          deployment: "staging"
+          size: 4x
+          runtime:
+            cloud:
+              atlassian-ip-ranges: true
+          script:
+            - mkdir -p ~/.ssh
+            - (umask  077 ; echo $SSH_READONLY | base64 --decode > ~/.ssh/desarrollo_readonly)
+            - chmod 600 ~/.ssh/desarrollo_readonly
+            - ssh-keyscan bitbucket.org >> ~/.ssh/known_hosts
+            - ssh-keyscan github.com >> ~/.ssh/known_hosts
+            - echo "Contenido actual de ~/.ssh/config:"
+            - cat ~/.ssh/config || echo "(archivo vacío)"
+            - |
+              grep -q "Host bitbucket.org" ~/.ssh/config || cat <<EOF >> ~/.ssh/config
+              Host bitbucket.org
+                HostName bitbucket.org
+                IdentityFile ~/.ssh/desarrollo_readonly
+                User git
+                StrictHostKeyChecking no
+              EOF
+            - |
+              grep -q "Host github.com" ~/.ssh/config || cat <<EOF >> ~/.ssh/config
+              Host github.com
+                HostName github.com
+                IdentityFile ~/.ssh/desarrollo_readonly
+                User git
+                StrictHostKeyChecking no
+              EOF
+            - ssh -i ~/.ssh/desarrollo_readonly -T git@bitbucket.org || echo "SSH failed"
+            - flutter build web --release --dart-define=ENV=dev
+            - 'echo -e "User-agent: *\nDisallow: /" >> ./build/web/robots.txt'
+            - tar -cvzf ./build.tar.gz ./build/web/*
+            - scp ./build.tar.gz "${SSH_USER}@${EIP_EC2}:/tmp/deployment/development/${DEVELOPMENT_VHOST}/build.tar.gz"
+            - ssh "${SSH_USER}@${EIP_EC2}" "whoami; /bin/bash /home/${SSH_USER}/deploy-development.sh"
+
+    main:
+      - step:
+          name: "Deploy to production"
+          image: instrumentisto/flutter:3.41.5
+          deployment: "production"
+          size: 4x
+          runtime:
+            cloud:
+              atlassian-ip-ranges: true
+          script:
+            - mkdir -p ~/.ssh
+            - (umask  077 ; echo $SSH_READONLY | base64 --decode > ~/.ssh/desarrollo_readonly)
+            - chmod 600 ~/.ssh/desarrollo_readonly
+            - ssh-keyscan bitbucket.org >> ~/.ssh/known_hosts
+            - ssh-keyscan github.com >> ~/.ssh/known_hosts
+            - echo "Contenido actual de ~/.ssh/config:"
+            - cat ~/.ssh/config || echo "(archivo vacío)"
+            - |
+              grep -q "Host bitbucket.org" ~/.ssh/config || cat <<EOF >> ~/.ssh/config
+              Host bitbucket.org
+                HostName bitbucket.org
+                IdentityFile ~/.ssh/desarrollo_readonly
+                User git
+                StrictHostKeyChecking no
+              EOF
+            - |
+              grep -q "Host github.com" ~/.ssh/config || cat <<EOF >> ~/.ssh/config
+              Host github.com
+                HostName github.com
+                IdentityFile ~/.ssh/desarrollo_readonly
+                User git
+                StrictHostKeyChecking no
+              EOF
+            - ssh -i ~/.ssh/desarrollo_readonly -T git@bitbucket.org || echo "SSH failed"
+            - flutter build web --release --dart-define=ENV=prod
+            - 'echo -e "User-agent: *\nDisallow: /" >> ./build/web/robots.txt'
+            - tar -cvzf ./build.tar.gz ./build/web/*
+            - scp ./build.tar.gz "${SSH_USER}@${EIP_EC2}:/tmp/deployment/production/${PRODUCTION_VHOST}/build.tar.gz"
+            - ssh "${SSH_USER}@${EIP_EC2}" "whoami; /bin/bash /home/${SSH_USER}/deploy-production.sh"

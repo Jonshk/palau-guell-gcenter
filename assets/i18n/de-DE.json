@@ -1,0 +1,135 @@
+{
+    "i18n": {
+        "languages": {
+            "ar-AR": "العربية",
+            "de-DE": "Deutsch",
+            "en-UK": "English",
+            "es-CA": "Català",
+            "es-ES": "Castellano",
+            "es-EU": "Euskara",
+            "es-GL": "Galego",
+            "fr-FR": "Français",
+            "hu-HU": "Magyar",
+            "it-IT": "Italiano",
+            "ja-JA": "日本語",
+            "ko-KR": "한국어",
+            "pt-PT": "Português",
+            "ru-RU": "Pусский",
+            "zh-MAN": "中文",
+            "nds-NL": "Nedersaksisch"
+        },
+        "startVisit": "Besuch beginnen",
+        "child": "Höre die Melodie",
+        "list": "Liste",
+        "back": "Zurück",
+        "map": "Plan",
+        "keyboard": "Tastatur",
+        "next": "Weiter",
+        "tours": "Besuche",
+        "accept": "Akzeptieren",
+        "send": "Senden",
+        "successSend": "Ihre Bewertung wurde erfolgreich gesendet",
+        "thanks": "Danke",
+        "ok": "In Ordnung",
+        "cancel": "Abbrechen",
+        "accessibility": {
+            "title": "Barrierefreiheit",
+            "description": "Sie können bei Bedarf die folgenden Barrierefreiheitsfunktionen für die Anwendung aktivieren.",
+            "enableSignLanguage": "Gebärdensprache",
+            "enableAudioDescription": "Audiobeschreibung",
+            "enableSubtitles": "Untertitel"
+        },
+        "headsetModal": {
+            "title": "Bereiten Sie sich aufs Zuhören vor",
+            "description": "Um andere Benutzer nicht zu stören, halten Sie Ihr Mobilgerät nah an Ihr Ohr oder schließen Sie Kopfhörer an.",
+            "notAgain": "Diese Nachricht nicht mehr anzeigen"
+        },
+        "menu": {
+            "language": "Sprachen",
+            "survey": "Fragebogen",
+            "information": "Information",
+            "location": "Standort"
+        },
+        "crv": {
+            "sincronize": "Audio mit dem Video des Raums synchronisiert",
+            "mastersync": "Audio wird synchronisiert"
+        },
+        "error": {
+            "title": "Wiedergabefehler",
+            "description": "Im Moment war es nicht möglich, mit dem Video zu synchronisieren. Versuchen Sie es in ein paar Minuten erneut oder wenden Sie sich an unser Personal.",
+            "pause": "Fehler beim Pausieren"
+        },
+        "instructions": {
+            "title": "Dieser Raum verfügt über audiovisuelle Inhalte",
+            "description": "Drücken Sie die Schaltfläche auf dem Bildschirm **Audiovisuell synchronisieren**.\n\nSie sehen das Video auf dem Bildschirm des Raums, während Sie den synchronisierten Ton direkt über Ihre Kopfhörer genießen.",
+            "button": "Audiovisuell synchronisieren",
+            "description2": "Synchronisieren Sie das audiovisuelle Medium auf Ihrem Handy, drücken Sie auf das Play-Symbol und halten Sie das Telefon an Ihr Ohr"
+        },
+        "survey": {
+            "title": "BEWERTEN SIE IHRE ERFAHRUNG",
+            "description": "Nehmen Sie sich eine Minute Zeit, um die Umfrage auszufüllen und helfen Sie uns, den Service zu verbessern",
+            "correct": "Umfrage erfolgreich ausgefüllt. Vielen Dank"
+        },
+        "maps": {
+            "0": "Erdgeschoss",
+            "1": "Zwischengeschoss",
+            "3": "Halbgeschoss",
+            "5": "Dachboden",
+            "-1": "Keller",
+            "2": "Beletage",
+            "4": "Schlafzimmer",
+            "6": "Dachterrasse",
+            "presentation": "Präsentation",
+            "garage": "Garage",
+            "basementRamp": "Zugang zum Keller und Rampe",
+            "lobby": "Eingangshalle",
+            "stairs": "Zugang zum Zwischengeschoss und Treppen",
+            "homeLobby": "Eingangshalle der Wohnung und Treppe",
+            "nobleFloor": "Zugang zur Beletage und Treppen",
+            "musicCourt": "Musikertribüne",
+            "bedroomsStairs": "Zugang zur Schlafzimmeretage und Treppe",
+            "loft": "Dachboden. Ausstellungsraum",
+            "roof": "Zugang zur Dachterrasse und Treppe",
+            "stable": "Stall",
+            "groundFloor": "Zugang zur Eingangshalle im Erdgeschoss und Rampe",
+            "anteroom": "Vorzimmer",
+            "trustRoomCourtRoom": "Vertrauensraum und Tribünenraum",
+            "diningRoom": "Esszimmer",
+            "corridor": "Flur",
+            "noonRoof": "Mittagsterrasse und Rückfassade",
+            "paintingWorkshop": "Billardflügel und Mal- und Bildhauerwerkstatt",
+            "lostSteps": "Saal der verlorenen Schritte",
+            "visitingRoom": "Besucherzimmer und Damenboudoir",
+            "centralRoom": "Zentraler Salon 1",
+            "centralRoom2": "Zentraler Salon 2",
+            "stairsAccess": "Zugang zum Halbgeschoss und Treppen",
+            "trustRoom": "Vertrauensraum",
+            "isabelLopez": "Schlafzimmer von Isabel López",
+            "sonsRoom": "Schlafzimmer und Studierzimmer der Söhne Güell López",
+            "blueRoom": "Altes Badezimmer, Sanitärräume und blaues Zimmer. Audiovisuell",
+            "eusebisRoom": "Schlafzimmer von Eusebi Güell",
+            "serviceStair": "Dienstbotentreppe",
+            "roofTop": "Dachterrasse",
+            "groundRoomExit": "Zugang zum Erdgeschoss, Ausgang und Treppe"
+        },
+        "keyboards": {
+            "contentOutOfTour": "Dieser Inhalt ist nicht Teil der aktuellen Tour. Möchten Sie aussteigen, um ihn zu sehen?",
+            "contentNotFoundInAnyTour": "Der gesuchte Inhalt existiert nicht"
+        },
+        "download": {
+            "title": "Tour-Download",
+            "description": "Möchten Sie die Inhalte dieser Tour herunterladen, um die Anwendung offline zu nutzen?",
+            "size": "Download-Größe",
+            "download": "Herunterladen",
+            "online": "Online fortfahren",
+            "downloading": "Tour wird heruntergeladen",
+            "success": "Download abgeschlossen"
+        },
+        "attentionTitle": "Achtung",
+        "contentNotAvailable": "Inhalt nicht verfügbar",
+        "floor": "Etage",
+        "keyboardSearchText": "",
+        "mapNotAvailable": "Plan nicht verfügbar",
+        "resourceNotFound": "Inhalt nicht gefunden"
+    }
+}

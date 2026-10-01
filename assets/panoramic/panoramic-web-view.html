@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panoramic View</title>
+    <link rel="stylesheet" href="./panellum.css" />
+    <script type="text/javascript" src="./panellum.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #panorama {
+            width: 100vw;
+            height: 100vh;
+            margin: 0px
+        }
+
+        .custom-hotspot {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+
+        .marker-red {
+            background-image: url('./pin.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="panorama"></div>
+    </div>
+
+    <script>
+        window.addEventListener('message', (event) => {
+            if (event.data != undefined) {
+                try {
+                    var message = JSON.parse(event.data);
+                    addPanorama(message.urlPanorama, message.hotspots);
+                } catch (error) {
+                    console.error('Error al parsear el mensaje JSON:' + error);
+                }
+            }
+        });
+
+        function addPanorama(urlPanorama, hotspots) {
+            var viewer = pannellum.viewer('panorama', {
+                "type": "equirectangular",
+                "panorama": urlPanorama,
+                "autoLoad": true,
+                "showControls": false,
+                "hotSpots": [],
+                "hfov": 80
+            });
+
+            addHotspots(hotspots, viewer);
+        }
+
+
+        function addHotspots(hotspots, viewer) {
+            if (!viewer) {
+                setTimeout(function () {
+                    addHotspots(hotspots);
+                }, 1000);
+                return;
+            }
+            for (var i = 0; i < hotspots.length; i++) {
+                var hotspotData = hotspots[i];
+                viewer.addHotSpot({
+                    "pitch": hotspotData.pitch,
+                    "yaw": hotspotData.yaw,
+                    "cssClass": "custom-hotspot",
+                    "createTooltipFunc": hotspot,
+                    "createTooltipArgs": {
+                        "id": hotspotData.id,
+                        'image': hotspotData.imageIndex,
+                        'title': hotspotData.title,
+                        'description': hotspotData.description
+                    }
+                });
+            }
+        }
+
+        function hotspot(hotSpotDiv, args) {
+            hotSpotDiv.classList.add('marker-red');
+            hotSpotDiv.addEventListener('click', function (event) {
+                window.parent.postMessage('openLocationModal/' + args.title + '/' + args.description + '/' + args.image + '/' + args.id, '*');
+
+            });
+        }
+    </script>
+
+</body>
+
+</html>

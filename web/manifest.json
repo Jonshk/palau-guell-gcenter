@@ -1,0 +1,87 @@
+{
+    "name": "Palau Güell",
+    "short_name": "Palau Güell",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "theme_color": "#FFFFFF",
+    "description": "Audioguía oficial de Palau Güell",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "categories": [
+        "travel",
+        "education",
+        "culture"
+    ],
+    "dir": "ltr",
+    "icons": [
+        {
+            "src": "resources/icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "resources/icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "resources/screenshots/screenshot_mobile_1.png",
+            "sizes": "320x640",
+            "type": "image/png",
+            "label": "App Start",
+            "form_factor": "narrow"
+        },
+        {
+            "src": "resources/screenshots/screenshot_mobile_2.png",
+            "sizes": "320x640",
+            "type": "image/png",
+            "label": "App Languages",
+            "form_factor": "narrow"
+        },
+        {
+            "src": "resources/screenshots/screenshot_mobile_3.png",
+            "sizes": "320x640",
+            "type": "image/png",
+            "label": "App Content",
+            "form_factor": "narrow"
+        },
+        {
+            "src": "resources/screenshots/screenshot_web_1.png",
+            "sizes": "640x320",
+            "type": "image/png",
+            "label": "App Start",
+            "form_factor": "wide"
+        },
+        {
+            "src": "resources/screenshots/screenshot_web_2.png",
+            "sizes": "640x320",
+            "type": "image/png",
+            "label": "App Tours",
+            "form_factor": "wide"
+        },
+        {
+            "src": "resources/screenshots/screenshot_web_3.png",
+            "sizes": "640x320",
+            "type": "image/png",
+            "label": "App Content",
+            "form_factor": "wide"
+        }
+    ]
+}
