@@ -1,0 +1,15 @@
+name: indoor_nav_pilot
+description: Prueba independiente de reconocimiento visual para navegación interior
+publish_to: none
+version: 0.1.0+1
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  camera: ^0.11.2
+  image: ^4.5.4
+  path_provider: ^2.1.5
+  shared_preferences: ^2.5.3
+flutter:
+  uses-material-design: true
