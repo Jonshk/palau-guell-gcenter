@@ -20,7 +20,9 @@ class OfficePilot extends StatefulWidget {
 class _OfficePilotState extends State<OfficePilot> {
   CameraController? camera;
   Timer? timer;
-  bool busy=false, training=false, locating=false;
+  bool busy=false, training=true, locating=false;
+  int locateGeneration=0;
+  final List<int> recentZones=[];
   int selected=0, destination=3;
   int? position;
   double? score;
@@ -82,7 +84,8 @@ class _OfficePilotState extends State<OfficePilot> {
     return math.sqrt(d/a.length);
   }
   Future<void> _locate() async {
-    if(!locating||references.isEmpty)return;
+    if(!locating||references.isEmpty||busy)return;
+    final generation=locateGeneration;
     final f=await _capture();if(f==null)return;
     final matches=<({int zone,double distance})>[];
     for(final e in references.entries){
@@ -97,16 +100,22 @@ class _OfficePilotState extends State<OfficePilot> {
     final distinct=other.isEmpty||best.distance<other.first.distance*0.78;
     // Umbral conservador, experimental. No es una probabilidad calibrada.
     final accepted=best.distance<0.13&&distinct;
-    if(mounted)setState((){
-      position=accepted?best.zone:null;
+    if(!mounted||!locating||generation!=locateGeneration)return;
+    if(accepted){
+      recentZones.add(best.zone);
+      if(recentZones.length>3)recentZones.removeAt(0);
+    }else{recentZones.clear();}
+    final stable=recentZones.length>=2 && recentZones.every((z)=>z==best.zone);
+    setState((){
+      position=accepted&&stable?best.zone:null;
       score=best.distance;
       status=accepted?'Posible ubicación: ${zones[best.zone]}':'Ubicación no fiable: mueve el móvil para ver otras referencias';
     });
   }
   void _toggle(){
-    if(locating){timer?.cancel();setState(()=>locating=false);return;}
+    if(locating){timer?.cancel();locateGeneration++;recentZones.clear();setState(()=>locating=false);return;}
     if(references.isEmpty){setState(()=>status='Primero registra referencias');return;}
-    setState(()=>locating=true);
+    locateGeneration++;recentZones.clear();setState(()=>locating=true);
     _locate();
     timer=Timer.periodic(const Duration(seconds:3),(_)=>_locate());
   }
@@ -135,7 +144,7 @@ class _OfficePilotState extends State<OfficePilot> {
           ButtonSegment(value:true,label:Text('Entrenar'),icon:Icon(Icons.school)),
           ButtonSegment(value:false,label:Text('Visitante'),icon:Icon(Icons.map)),
         ],selected:{training},onSelectionChanged:(v){
-          timer?.cancel();setState((){training=v.first;locating=false;position=null;});
+          timer?.cancel();locateGeneration++;recentZones.clear();setState((){training=v.first;locating=false;position=null;});
         }),
         const SizedBox(height:16),
         if(training)...[
@@ -147,6 +156,8 @@ class _OfficePilotState extends State<OfficePilot> {
             icon:const Icon(Icons.camera_alt),label:const Text('Guardar referencia visual')),
           Text('Referencias en esta zona: ${references['$selected']?.length??0}'),
           const Text('Registra 5–10 vistas distintas por zona. Evita personas y objetos móviles.'),
+          const SizedBox(height:8),
+          Text('Total guardado: ${references.values.fold<int>(0,(n,l)=>n+l.length)} referencias'),
         ]else...[
           DropdownButton<int>(isExpanded:true,value:destination,items:[
             for(var i=0;i<zones.length;i++)DropdownMenuItem(value:i,child:Text('Destino: ${zones[i]}'))
