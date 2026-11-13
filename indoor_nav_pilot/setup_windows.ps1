@@ -6,7 +6,9 @@ $temporary = Join-Path $env:TEMP 'indoor_nav_flutter_scaffold'
 if (Test-Path $temporary) { Remove-Item $temporary -Recurse -Force }
 flutter create --platforms android --project-name indoor_nav_pilot $temporary
 if ($LASTEXITCODE -ne 0) { throw 'No se pudo crear el proyecto Flutter.' }
-Copy-Item (Join-Path $temporary 'android') (Join-Path $root 'android') -Recurse -Force
+$androidDest = Join-Path $root 'android'
+if (Test-Path $androidDest) { Remove-Item $androidDest -Recurse -Force }
+Copy-Item (Join-Path $temporary 'android') $androidDest -Recurse -Force
 Copy-Item (Join-Path $temporary 'analysis_options.yaml') $root -Force
 Copy-Item (Join-Path $temporary '.metadata') $root -Force
 Remove-Item $temporary -Recurse -Force
